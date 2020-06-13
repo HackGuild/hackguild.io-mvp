@@ -1,0 +1,34 @@
+@import "../../main";
+
+.chart-text {
+  fill: white;
+  font-family: $montserrat;
+  // transform: translateY(0.25em);
+}
+
+.chart-number {
+  font-size: 0.25em;
+  line-height: 1;
+  text-anchor: middle;
+  transform: translateY(-0.25em);
+}
+
+.chart-label {
+  font-size: 0.1em;
+  text-transform: lowercase;
+  text-anchor: middle;
+  transform: translateY(0.9em);
+}
+
+svg {
+  background-color: black;
+}
+
+.chart-icon {
+  font-family: "Font Awesome\ 5 Free" !important;
+  content: "\f061" !important;
+  font-size: 0.25em;
+  transform: translateY(1.2em);
+  text-anchor: middle;
+  font-weight: 900;
+}

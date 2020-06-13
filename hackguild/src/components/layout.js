@@ -10,6 +10,7 @@ import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
 
 import Header from "./header"
+import { Footer } from "../components/molecules"
 import "./layout.css"
 
 const Layout = ({ children }) => {
@@ -25,6 +26,16 @@ const Layout = ({ children }) => {
 
   return (
     <>
+      <link
+        rel="stylesheet"
+        href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+        crossOrigin="anonymous"
+      ></link>
+      <link
+        rel="stylesheet"
+        href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        crossOrigin="anonymous"
+      ></link>
       <Header siteTitle={data.site.siteMetadata.title} />
       <div
         style={{
@@ -34,12 +45,13 @@ const Layout = ({ children }) => {
         }}
       >
         <main>{children}</main>
-        <footer>
+        {/* <footer>
           © {new Date().getFullYear()}, Built with
           {` `}
           <a href="https://www.gatsbyjs.org">Gatsby</a>
-        </footer>
+        </footer> */}
       </div>
+      <Footer />
     </>
   )
 }

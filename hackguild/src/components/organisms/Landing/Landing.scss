@@ -1,0 +1,31 @@
+@import "../../main";
+
+.landing-girl-image {
+  width: 40%;
+  max-width: 716px;
+  height: auto;
+  float: right;
+  padding: 40px 80px 0px 0px;
+}
+
+.landing-title {
+  font-family: $montserrat;
+  font-size: 90px;
+  font-weight: bold;
+  line-height: 110px;
+  color: white;
+  padding: 5vh;
+}
+
+.landing-content {
+  background-color: $violet;
+  color: white;
+  width: 100%;
+}
+
+.landing-description {
+  font-family: $montserrat;
+  padding: 5vh;
+  line-height: 52px;
+  font-size: 42px;
+}

@@ -1,0 +1,30 @@
+@import "../../main";
+
+.image-list__item {
+  display: inline-block;
+  margin: 50px;
+  height: 50px;
+}
+
+.rectangle {
+  height: 130px;
+  width: 630px;
+  background-color: $violet;
+  border-radius: 30px;
+  padding: 50px 20px 10px 20px;
+  margin: 60px auto;
+}
+
+.rectangle p {
+  color: white;
+  font-family: $montserrat;
+  font-size: 60px;
+  text-align: center;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.image-list Img {
+  width: 100%;
+  height: auto;
+}

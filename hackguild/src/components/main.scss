@@ -1,15 +1,22 @@
 @import url("https://use.typekit.net/upg4lus.css");
 
 //Fonts
-$montserrat: 'Montserrat', sans-serif;
+$montserrat: "Montserrat", sans-serif;
 
 //Colors
-$coral: #FF534F;
-$neon: #363FFF;
-$slate: #082A44;
-$mustard: #FCB14B;
-$teal: #00B8B9;
+$coral: #ff534f;
+$neon: #363fff;
+$slate: #082a44;
+$mustard: #fcb14b;
+$teal: #00b8b9;
 $violet: #452081;
-$purple: #C0BDE0;
+$purple: #c0bde0;
 
 //Grids
+
+//Styles
+body {
+  width: 100vw;
+  height: 100vh;
+  // overflow: hidden;
+}
