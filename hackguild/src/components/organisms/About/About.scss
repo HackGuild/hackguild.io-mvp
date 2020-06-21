@@ -1,0 +1,18 @@
+@import "./../../main.scss";
+
+.About{
+    width: 100vw;
+    padding: 50px 100px 50px 100px;
+    background: $violet;
+    color: $white;
+
+    .Heading {
+        margin-bottom: 44px;
+        font-size: 50px;
+    }
+  
+    .Bullet {
+        line-height: 40px;
+        font-size: 25px;
+    }
+}

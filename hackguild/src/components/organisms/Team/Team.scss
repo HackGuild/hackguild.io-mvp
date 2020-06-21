@@ -1,0 +1,23 @@
+@import "./../../main.scss";
+
+.Team {
+  display: inline-block;
+}
+
+.team-title {
+  background-color: $purple;
+  border-radius: 50px;
+  color: $violet;
+  padding: 20px;
+  width: 275px;
+  display: block;
+  position: relative;
+  left: 190px;
+  bottom: 55px;
+
+  h1 {
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 30px;
+    margin: 0;
+  }

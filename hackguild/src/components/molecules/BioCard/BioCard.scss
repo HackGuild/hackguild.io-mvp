@@ -1,0 +1,36 @@
+@import "./../../main.scss";
+
+.Member{
+    display: inline-block;
+    text-align: left;
+    align-items: center;
+    padding: 20px;
+    border: 2px solid $slate;
+    margin: 50px 0 50px 50px;
+    width: 25%;
+
+    .Headshot{
+        width: 150px;
+        height: 150px;
+        margin-right: 40px;
+    }
+
+    .MemberInfo{
+        float: right;
+        font-family: $montserrat;
+        font-size: 20px;
+        color: $slate;
+        margin-right: 30px;
+        width: 200px;
+
+        .MemberName{
+            margin-bottom: 25px;
+            font-weight: 500;
+        }
+
+        .MemberPosition{
+            font-weight: 200;
+            overflow-wrap: break-word;
+        }
+    }
+}

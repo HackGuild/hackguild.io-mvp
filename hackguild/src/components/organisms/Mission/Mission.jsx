@@ -6,7 +6,7 @@ import girl from "./../../../images/023.png"
 const Mission = () => {
   return (
     <div className="mission-content">
-      <img src={girl} className="mission-girl" />
+      <img src={girl} className="mission-girl" alt="mission-girl" />
       <div className="mission-text">
         <p>
           HackGuild is a 501c3 nonprofit founded on the principles of{" "}
