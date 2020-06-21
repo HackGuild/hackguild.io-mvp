@@ -81,7 +81,7 @@ const CircleProgressBar = ({
           &#xf236;
         </text>
         <text x="50%" y="50%" className="chart-number">
-          % {progressBar}
+          {progressBar} %
         </text>
         <text x="50%" y="50%" className="chart-label">
           {innerText}
@@ -104,15 +104,15 @@ CircleProgressBar.propTypes = {
 }
 
 CircleProgressBar.defaultProps = {
-  strokeColor: "#FAC8E0",
+  strokeColor: "#452081",
   strokeWidth: 0.75,
   innerText: "Completed",
   legendText: "",
   percentage: 0,
   trailStrokeWidth: 0.75,
-  trailStrokeColor: "black",
+  trailStrokeColor: "#ff534f",
   trailSpaced: false,
-  speed: 6,
+  speed: 8,
 }
 
 export default CircleProgressBar

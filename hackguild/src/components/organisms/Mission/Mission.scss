@@ -1,19 +1,25 @@
 @import "../../main";
 
-.girl-image {
-  width: 100%;
-  max-width: 463px;
-  height: auto;
-  float: left;
-  margin-right: 20px;
+.mission-content {
   margin-top: 100px;
-  margin-left: 100px;
+
+  .mission-girl {
+    width: 100%;
+    max-width: 463px;
+    height: auto;
+    float: left;
+    margin-right: 20px;
+    margin-top: 100px;
+    margin-left: 100px;
+  }
+  
+  .mission-text {
+    font-family: $montserrat;
+    font-size: 38px;
+    line-height: 50px;
+    text-align: right;
+    padding: 50px;
+    color: $slate !important;
+  }
 }
 
-.text-box {
-  font-family: $montserrat;
-  font-size: 42px;
-  line-height: 60px;
-  text-align: right;
-  padding: 50px;
-}

@@ -12,36 +12,33 @@ const Statistics = () => {
       ></link>
       <CircleProgressBar
         className="circle-progress"
-        percentage={84}
-        innerText="of mentees"
+        percentage={25}
+        innerText="of schools"
       />
       <CircleProgressBar
         className="circle-progress"
-        percentage={67.7}
-        innerText="of mentees"
+        percentage={22}
+        innerText="of students"
       />
       <CircleProgressBar
         className="circle-progress"
-        percentage={50}
-        innerText="of mentees"
+        percentage={13}
+        innerText="of students"
       />
       <div className="row rowWithFullWidth">
         <div className="col">
           <p>
-            said they felt "more aware of opportunities, resources, and
-            networks, within their chosen career path
+            teach computer programming as part of their curriculum.
           </p>
         </div>
         <div className="col">
           <p>
-            said they felt "more confident about their leadership potential and
-            ability to change the world."
+            that are in AP Computer Science classes are women.
           </p>
         </div>
         <div className="col">
           <p>
-            would not otherwise have access to one-on-one personal mentorship
-            realtionships in their communities.
+            that are in AP Computer Science classes are Black or Hispanic.
           </p>
         </div>
       </div>

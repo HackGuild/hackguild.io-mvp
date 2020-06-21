@@ -1,14 +1,15 @@
 import React from "react"
-import { Header } from "../components/molecules"
-// import { Support } from "../components/organisms"
-// import { Mission } from "../components/organisms"
-// import { Footer } from "../components/molecules"
-// import { Statistics } from "../components/organisms"
+import { Layout, Landing, Support, Mission, Statistics } from "../components/organisms"
 
 const demo = () => {
   return (
     <>
-      <Header />
+      <Layout>
+        <Landing />
+        <Mission />
+        <Statistics />
+        <Support />
+      </Layout>
     </>
   )
 }

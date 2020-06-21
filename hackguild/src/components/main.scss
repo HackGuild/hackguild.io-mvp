@@ -11,6 +11,7 @@ $mustard: #fcb14b;
 $teal: #00b8b9;
 $violet: #452081;
 $purple: #c0bde0;
+$white: #fff;
 
 //Grids
 
@@ -18,5 +19,6 @@ $purple: #c0bde0;
 body {
   width: 100vw;
   height: 100vh;
-  // overflow: hidden;
+  overflow-x: hidden;
+  font-family: $montserrat;
 }
