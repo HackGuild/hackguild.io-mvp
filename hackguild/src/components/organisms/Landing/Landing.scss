@@ -18,7 +18,7 @@
   
   .landing-title {
     font-family: $montserrat;
-    font-size: 70px;
+    font-size: 4vw;
     font-weight: bold;
     line-height: 110px;
     color: white;
@@ -31,9 +31,8 @@
   }
 
   .landing-description {
-    padding: 5vh;
-    line-height: 50px;
-    font-size: 35px;
+    padding: 1vh 5vw;
+    font-size: 2vw;
   }
 
   .landing-button:hover {
@@ -47,9 +46,9 @@
     padding: 20px;
     width: 275px;
     display: block;
-    position: relative;
-    left: 190px;
-    bottom: 55px;
+    position: absolute;
+    left: 20%;
+    transform: translateY(-5%) translateX(-50%);
 
     h1 {
       font-weight: 700;

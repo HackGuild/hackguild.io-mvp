@@ -12,8 +12,9 @@
   }
   
   p {
-    color: white;
+    color: $violet;
     font-family: $montserrat;
+    font-size: 2vw;
   }
   
   .rowWithFullWidth {
@@ -22,7 +23,8 @@
   }
   
   .stat-source p{
-    font-size: 0.5em;
-    text-align: right;
+    font-size: 0.1vw;
+    position: absolute;
+    right: 0;
   }
 }

@@ -41,15 +41,7 @@ const Statistics = () => {
             that are in AP Computer Science classes are Black or Hispanic.
           </p>
         </div>
-      </div>
-      <div className="row rowWithFullWidth">
-        <div className="col-sm-12">
-          <p className="stat-source">
-            <a href="https://csedweek.org/resource_kit/blurbs" target="_blank">
-              Source: https://csedweek.org/resource_kit/blurbs
-            </a>
-          </p>
-        </div>
+        {/* Source: https://csedweek.org/resource_kit/blurbs */}
       </div>
     </div>
   )

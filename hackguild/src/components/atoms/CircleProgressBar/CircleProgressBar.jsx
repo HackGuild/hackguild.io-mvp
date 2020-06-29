@@ -40,14 +40,6 @@ const CircleProgressBar = ({
 
   return (
     <svg width="33%" height="33%" viewBox={circleConfig.viewBox}>
-      {/* <defs>
-      <style type="text/css">
-        @font-face {
-          font-family: 'FontAwesome';
-          src: url(data:font/opentype;base64,[...]) format('opentype');
-        }
-      </style>
-    </defs> */}
       <circle
         className="donut-ring"
         cx={circleConfig.x}
@@ -74,16 +66,10 @@ const CircleProgressBar = ({
       />
 
       <g className="chart-text">
-        {/* <text id="chk" x="50%" y="50%" className="chart-icon">
-          &#x2718;
-        </text> */}
-        <text x="50%" y="50%" className="chart-icon">
-          &#xf236;
-        </text>
-        <text x="50%" y="50%" className="chart-number">
+        <text x="50%" y="55%" className="chart-number">
           {progressBar} %
         </text>
-        <text x="50%" y="50%" className="chart-label">
+        <text x="50%" y="55%" className="chart-label">
           {innerText}
         </text>
       </g>
