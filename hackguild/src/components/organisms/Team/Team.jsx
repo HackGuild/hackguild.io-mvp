@@ -8,6 +8,7 @@ export default function Team() {
       <div className="team-title">
         <h1>HackGuild Team</h1>
       </div>
+<<<<<<< HEAD
       <BioCard
         headshot={IA}
         name="Isabel Abonitalla"
@@ -33,6 +34,13 @@ export default function Team() {
         name="Estrella Popoca"
         position="Marketing Specialist"
       />
+=======
+      <BioCard className="two" headshot={IA} name="Isabel Abonitalla" position="Co-founder, Executive Director" />
+      <BioCard className="two" headshot="https://source.unsplash.com/random/150x150" name="Michael Cao" position="Co-founder, Executive Director" />
+      <BioCard headshot="https://source.unsplash.com/random/150x150" name="Lily Gong" position="Content Creator" />
+      <BioCard headshot="https://source.unsplash.com/random/150x150" name="Kristen Lee" position="Operations Intern" />
+      <BioCard headshot="https://source.unsplash.com/random/150x150" name="Estrella Popoca" position="Marketing Specialist" />
+>>>>>>> 33dca45b77302f4647eb3cdd0c87c3616ab06335
     </div>
   )
 }
