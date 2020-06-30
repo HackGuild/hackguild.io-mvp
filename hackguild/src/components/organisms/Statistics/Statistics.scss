@@ -3,6 +3,7 @@
 .statistics {
   background-color: $purple;
   border-width: 5em 2em 1em 2em;
+  padding: 100px 100px 100px 100px;
   margin: 0;
   // width: 100%;
 
@@ -14,7 +15,7 @@
   p {
     color: $violet;
     font-family: $montserrat;
-    font-size: 2vw;
+    font-size: 1.7vw;
   }
   
   .rowWithFullWidth {
