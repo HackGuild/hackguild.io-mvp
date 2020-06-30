@@ -1,29 +1,5 @@
 @import "./../../main.scss";
 
-<<<<<<< HEAD
-.Member {
-  display: inline-block;
-  text-align: left;
-  align-items: center;
-  padding: 20px;
-  border: 2px solid $slate;
-  margin: 50px 0 50px 50px;
-  width: 25%;
-
-  .Headshot {
-    width: 150px;
-    height: 150px;
-    margin-right: 40px;
-  }
-
-  .MemberInfo {
-    float: right;
-    font-family: $montserrat;
-    font-size: 20px;
-    color: $slate;
-    margin-right: 30px;
-    width: 200px;
-=======
 .Member{
     display: inline-block;
     text-align: left;
@@ -46,7 +22,6 @@
         color: $slate;
         margin-right: 30px;
         width: 300px;
->>>>>>> 33dca45b77302f4647eb3cdd0c87c3616ab06335
 
     .MemberName {
       margin-bottom: 25px;
@@ -57,7 +32,6 @@
       font-weight: 200;
       overflow-wrap: break-word;
     }
-<<<<<<< HEAD
   }
 }
 .Modal {
@@ -102,6 +76,4 @@
 .ModalButton:active {
   position: relative;
   top: 1px;
-=======
->>>>>>> 33dca45b77302f4647eb3cdd0c87c3616ab06335
 }
