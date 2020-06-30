@@ -1,9 +1,9 @@
 {
-  "name": "gatsby-starter-default",
+  "name": "hackguild",
   "private": true,
-  "description": "A simple starter to get up and developing quickly with Gatsby",
+  "description": "A global nonprofit dedicated to expanding access to tech education to underserved communities and empowering the next generation of innovators, computer scientists, and tech professionals.",
   "version": "0.1.0",
-  "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+  "author": "Isabel Abonitalla, Kinnera Banda, Lily Gong, Anushka Saxena, Lauren Zaiden",
   "dependencies": {
     "bootstrap": "^4.5.0",
     "gatsby": "^2.21.37",
@@ -40,7 +40,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/gatsbyjs/gatsby-starter-default"
+    "url": "https://github.com/HackGuild/hackguild.io-mvp"
   },
   "bugs": {
     "url": "https://github.com/gatsbyjs/gatsby/issues"
