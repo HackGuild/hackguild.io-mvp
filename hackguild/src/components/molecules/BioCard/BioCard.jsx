@@ -10,6 +10,11 @@ export default function BioCard({ headshot, name, position}) {
                     <h3 className="MemberName">{name}</h3>
                     <h5 className="MemberPosition">{position}</h5>
                 </div>
+                <div className="Biography">
+                    <p>
+                        
+                    </p>
+                </div>
             </div>
         </React.Fragment>
     );

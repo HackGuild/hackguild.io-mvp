@@ -1,3 +1,4 @@
+require('dotenv').config()
 module.exports = {
   siteMetadata: {
     title: `HackGuild`,
@@ -16,6 +17,16 @@ module.exports = {
     },
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
+    {
+      resolve: `gatsby-source-contentful`,
+      options: {
+        spaceId: `qlhzmho4n1an`,
+        // Learn about environment variables: https://gatsby.dev/env-vars
+        accessToken: process.env.CONTENTFUL_ACCESS_TOKEN,
+        host: `preview.contentful.com`,
+        downloadLocal: true,
+      },
+    },
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
