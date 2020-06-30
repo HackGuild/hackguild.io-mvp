@@ -32,7 +32,7 @@ export default function Team(props) {
   return(
     <div className="Team">
       <div className="team-title">
-          <h1>HackGuild Team</h1>
+        <h1>HackGuild Team</h1>
       </div>
       <BioCard headshot={IA} name="Isabel Abonitalla" position="Co-founder, Executive Director" />
       <BioCard headshot="https://source.unsplash.com/random/150x150" name="Michael Cao" position="Co-founder, Executive Director" />
@@ -43,5 +43,5 @@ export default function Team(props) {
       <BioCard key={`${index++}`} headshot={Biography.node.headshot.file.url} name={Biography.node.name} position={Biography.node.position} biography={Biography.node.biography.biography} />
       )} */}
     </div>
-  );
+  )
 }
