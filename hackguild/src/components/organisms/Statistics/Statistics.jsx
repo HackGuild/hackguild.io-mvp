@@ -33,12 +33,12 @@ const Statistics = () => {
         </div>
         <div className="col">
           <p>
-            that are in AP Computer Science classes are women.
+            in AP Computer Science classes are women.
           </p>
         </div>
         <div className="col">
           <p>
-            that are in AP Computer Science classes are Black or Hispanic.
+            in AP Computer Science classes are Black or Hispanic.
           </p>
         </div>
         {/* Source: https://csedweek.org/resource_kit/blurbs */}
