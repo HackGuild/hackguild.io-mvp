@@ -21,12 +21,9 @@
     "react": "^16.12.0",
     "react-bootstrap": "^1.0.1",
     "react-dom": "^16.12.0",
-<<<<<<< HEAD
     "react-helmet": "^6.0.0",
     "react-modal": "^3.11.2"
-=======
     "react-helmet": "^6.1.0"
->>>>>>> 33dca45b77302f4647eb3cdd0c87c3616ab06335
   },
   "devDependencies": {
     "prettier": "2.0.5"
