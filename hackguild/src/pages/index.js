@@ -1,7 +1,7 @@
 import React from "react"
 import { Layout, Landing, Support, Mission, Statistics } from "../components/organisms"
 
-const demo = () => {
+const home = () => {
   return (
     <>
       <Layout>
@@ -13,4 +13,4 @@ const demo = () => {
     </>
   )
 }
-export default demo
+export default home

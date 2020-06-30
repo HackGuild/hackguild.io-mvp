@@ -1,7 +1,7 @@
 import React from "react";
 import "./BioCard.scss";
 
-export default function BioCard({ headshot, name, position}) {
+export default function BioCard({ headshot, name, position, biography }) {
     return(
         <React.Fragment>
             <div className="Member">
@@ -11,9 +11,7 @@ export default function BioCard({ headshot, name, position}) {
                     <h5 className="MemberPosition">{position}</h5>
                 </div>
                 <div className="Biography">
-                    <p>
-                        
-                    </p>
+                    <p>{biography}</p>
                 </div>
             </div>
         </React.Fragment>
