@@ -38,6 +38,7 @@
     }
   }
 }
+
 .Modal {
   background-color: #c0bde0;
   position: relative;
@@ -48,13 +49,14 @@
   width: 80%;
   overflow-y: auto;
 }
+
 .Overlay {
   position: fixed;
   top: 0;
   left: 0;
   right: 0;
   bottom: 0;
-  background: rgba(0, 0, 0, 0.6);
+  background: rgba(0, 0, 0, 0.7);
 }
 
 .ModalButton {
@@ -75,8 +77,9 @@
 .ModalButton:hover {
   background-color: transparent;
   border: none;
-  color: blueviolet;
+  color: $violet;
 }
+
 .ModalButton:active {
   position: relative;
   top: 1px;
