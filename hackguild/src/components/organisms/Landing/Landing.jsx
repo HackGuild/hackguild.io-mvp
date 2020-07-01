@@ -16,7 +16,7 @@ class Landing extends React.Component {
             innovators, computer scientists, and tech professionals.
           </p>
           <div className="landing-button">
-            <Link to="https://forms.gle/QBJa8uDGLf3cyNSp8">
+            <Link to="https://forms.gle/QBJa8uDGLf3cyNSp8" target="_blank">
               <h1>GET INVOLVED</h1>
             </Link>
           </div>

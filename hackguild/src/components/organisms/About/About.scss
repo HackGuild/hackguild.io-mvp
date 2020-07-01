@@ -8,11 +8,14 @@
 
     .Heading {
         margin-bottom: 44px;
-        font-size: 50px;
+        font-size: 60px;
+        position: relative;
     }
   
     .Bullet {
         line-height: 40px;
         font-size: 30px;
+        position: relative;
+        left: 2vw;
     }
 }
