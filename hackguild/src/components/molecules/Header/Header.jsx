@@ -15,7 +15,7 @@ export default function Header() {
                 <Link to="/about">
                     <h1>About</h1>
                 </Link>
-                <Link to="/#">
+                <Link to="https://medium.com/hackguild" target="_blank" className="tabs">
                     <h1>Blog</h1>
                 </Link>
                 <Link to="https://forms.gle/QBJa8uDGLf3cyNSp8" target="_blank" className="tabs">
