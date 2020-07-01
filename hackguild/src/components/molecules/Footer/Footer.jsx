@@ -1,4 +1,5 @@
 import React from "react"
+import { Link } from "gatsby"
 import "./Footer.scss"
 
 class Footer extends React.Component {
@@ -51,15 +52,15 @@ class Footer extends React.Component {
             {/* Column1 */}
             <div className="col all-links">
               <ul className="list-unstyled">
-                <li className="title">Home</li>
+                <li className="title"><Link to="/">Home</Link></li>
               </ul>
             </div>
             {/* Column2 */}
             <div className="col all-links">
               <ul className="list-unstyled">
-                <li className="title">About</li>
-                <li>Team</li>
+                <li className="title"><Link to="/about">About</Link></li>
                 <li>Mission</li>
+                <li>Team</li>
               </ul>
             </div>
             {/* Column3 */}
@@ -75,8 +76,8 @@ class Footer extends React.Component {
             <div className="col all-links">
               <ul className="list-unstyled">
                 <li className="title">Get Involved</li>
-                <li>Internship</li>
-                <li>Mentee</li>
+                <li><Link to="https://forms.gle/QBJa8uDGLf3cyNSp8">Internship</Link></li>
+                <li><Link to="https://forms.gle/4eUvcoVoXuvagjXe6">Event Organizer</Link></li>
                 <li>Sponsor</li>
                 <li>Donor</li>
               </ul>
