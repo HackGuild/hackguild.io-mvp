@@ -84,7 +84,7 @@ class Footer extends React.Component {
           </div>
           <div className="row">
             <p className="col-sm copyright">
-              &copy; 2020 HackGuild, built with love & Gatsby. All rights reserved.
+              &copy; 2020 HackGuild, built with love & Gatsby. Work in Progress. All rights reserved.
             </p>
           </div>
         </div>
