@@ -3,7 +3,7 @@
 .landing-content {
   background-color: $violet;
   color: white;
-  height: 85vh;
+  height: 90vh;
   background-image: url(./../../../images/Mockup.png);
   background-size: cover;
   font-family: $montserrat;
@@ -50,7 +50,8 @@
     width: 275px;
     display: block;
     position: absolute;
-    left: 16%;
+    top: 89%;
+    left: 25%;
     transform: translateY(-5%) translateX(-50%);
 
     h1 {

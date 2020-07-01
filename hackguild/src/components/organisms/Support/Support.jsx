@@ -4,6 +4,7 @@ import Img from "gatsby-image"
 import "./Support.scss"
 import notion from "../../../images/notion-logo.png"
 import builtbygirls from "../../../images/builtbygirls-logo.png"
+import google from "../../../images/google-logo.png"
 
 const Support = () => {
   // const data = useStaticQuery(graphql`
@@ -29,6 +30,7 @@ const Support = () => {
         <div class="specificimages">
           <img className="notion-logo" src={notion} alt="notion-logo" />
           <img className="builtbygirls-logo" src={builtbygirls} alt="builtbygirls-logo" />
+          <img className="google-logo" src={google} alt="google-logo" />
         </div>
         {/* {data.images.nodes.map(image => (
           <div className="image-list__item">
