@@ -78,8 +78,8 @@ class Footer extends React.Component {
                 <li className="title">Get Involved</li>
                 <li><Link to="https://forms.gle/QBJa8uDGLf3cyNSp8">Internship</Link></li>
                 <li><Link to="https://forms.gle/4eUvcoVoXuvagjXe6">Event Organizer</Link></li>
-                <li><Link to="mailto:team@hackguild.io?subject=HackGuild Sponsorship Infromation">Sponsor</Link></li>
-                <li><Link to="mailto:team@hackguild.io?subject=HackGuild Donation Infromation">Donate</Link></li>
+                <li><a href="mailto:team@hackguild.io?subject=HackGuild Sponsorship Infromation">Sponsor</a></li>
+                <li><a href="mailto:team@hackguild.io?subject=HackGuild Donation Infromation">Donate</a></li>
               </ul>
             </div>
           </div>
