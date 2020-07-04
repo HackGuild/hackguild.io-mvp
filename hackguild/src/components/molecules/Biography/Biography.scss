@@ -9,11 +9,10 @@
 
   .MemberInfo {
     float: right;
-    padding-right: 200px;
-    padding-top: 50px;
+    padding: 50px 100px 0 0;
     font-family: $montserrat;
     color: $slate;
-    // padding-top: 150px;
+
     .MemberName {
       font-size: 3rem;
       font-weight: bold;
