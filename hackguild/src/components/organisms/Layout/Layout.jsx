@@ -6,12 +6,12 @@ import "./Layout.scss"
 
 export default function Layout({children}) {
   return (
-    <>
-      <Header />
-      <div>
-        <main>{children}</main>
-      </div>
-      <Footer />
+    <>  
+        <Header />
+        <div>
+          <main>{children}</main>
+        </div>
+        <Footer />
     </>
   )
 }

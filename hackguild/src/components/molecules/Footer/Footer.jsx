@@ -6,7 +6,6 @@ class Footer extends React.Component {
   render() {
     return (
       <div className="main-footer">
-        <div className="px-5">
           <div className="row">
             <div className="col-sm-1">
               <a
@@ -89,7 +88,6 @@ class Footer extends React.Component {
             </p>
           </div>
         </div>
-      </div>
     )
   }
 }
