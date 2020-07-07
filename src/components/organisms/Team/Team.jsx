@@ -1,44 +1,78 @@
 import React from 'react'
 import { BioCard } from "../../molecules"
-import { graphql } from "gatsby"
-
-export const data = graphql`
-  query {
-    allContentfulBiography {
-      edges {
-        node {
-          position
-          name
-          headshot {
-            file {
-              url
-            }
-          }
-          biography {
-            biography
-          }
-        }
-      }
-    }
-  }
-`
+import { graphql, StaticQuery } from "gatsby"
 
 export default function Team(props) {
-  // const [bios, setBios] = useState([])
-  // const bioLists = props.data.allContentfulBiography.edges
-  // const bioList = []
-  // bioLists.map(Biography => {bioList.push(Biography)})
+//   const query = useStaticQuery(graphql`
+//   query {
+//     allContentfulBiography {
+//       edges {
+//         node {
+//           biography {
+//             json
+//           }
+//           headshot {
+//             file {
+//               url
+//             }
+//           }
+//         }
+//       }
+//     }
+//   }
+// `)
 
-  // useEffect(() => {
-  //   setBios(bioList)
-  // }, [])
+  // const BioList = props.data.allContentfulBiography.edges
+  // const Biographies = []
+  // BioList.map(Biography => {Biographies.push(Biography)})
+
 
   return(
     
     <div className="Team">
-      <div className="meetteam">
-        <h1>Hackguild Team</h1>
+      <div className="team-title">
+        <h1 className="meet-team">Hackguild Team</h1>
       </div>
+      {/* <StaticQuery query = { graphql`
+        query {
+          allContentfulBiography {
+            edges {
+              node {
+                biography {
+                  json
+                }
+                headshot {
+                  file {
+                    url
+                  }
+                }
+                name
+                position
+              }
+            }
+          }
+      `
+      }
+      render = {
+        bio =>(
+          <BioCard 
+            headshot={bio.allContentfulBiography.edges.node.headshot.file.url}
+            name={bio.allContentfulBiography.edges.node.name}
+            position={bio.allContentfulBiography.edges.node.position}
+            bio={bio.allContentfulBiography.edges.node.biography.json.content.content.value}
+          />
+        )
+      } />
+      {Biographies.map(bio => {
+        return(
+          <BioCard 
+            headshot={bio.node.headshot.file.url}
+            name={bio.node.name}
+            position={bio.node.position}
+            bio={bio.node.biography.json.content.content.value}
+          />
+        )
+      })} */}
       <BioCard 
         headshot="https://images.ctfassets.net/qlhzmho4n1an/7eKbUmjApNtRqcwbUqtfYJ/213b4083beaaeaceece8f54df13c5532/Isabel-_Headshot-01.png"
         name="Isabel Abonitalla" 
@@ -61,7 +95,7 @@ export default function Team(props) {
       <BioCard 
         headshot="https://images.ctfassets.net/qlhzmho4n1an/3RHC1xm0jjdL7vNGmfiOk1/1da68a56e5b38c5c695f99e545503554/HeadshotGongLily.jpg" 
         name="Lily Gong" 
-        position="Public Relations: Content Creator" 
+        position="Public Relations: Content Creator, Operations: Web Developer" 
         bio="Lily Gong is a rising senior at Palisades Charter High School. She is highly interested in computer science and passionate about empowering women and minorities in STEM. She is actively involved as a leader in her community through various clubs and nonprofits and is currently working on various research projects to further her interests. She loves writing and is the Features editor of her school newspaper and is currently working with other blogs to cast light on important topics."
       />
       <BioCard 
@@ -115,18 +149,15 @@ export default function Team(props) {
       <BioCard 
         headshot="https://images.ctfassets.net/qlhzmho4n1an/79xgz875XErNqXFFaqLGRE/def966e96a436ec806f5db013c2fd97a/profliepic.jpg" 
         name="Anna Xia" 
-        position="Public Relations: Social Media" 
+        position="Operations: Web Developer" 
         bio="Anna is a freshman at the University of Pennsylvania studying computer science and passionate about increasing accessibility to computer science education. At HackGuild, she works on the social media team, designing posts to spread awareness on the importance of diversity and accessibility to computer science education. Her other interests include volleyball, swimming, cooking, collecting stationary, robotics, and organizing the PennApps hackathon at UPenn. She is looking to explore data science, web design, and management in hopes of a career in software engineering or product management."
       />
       <BioCard 
         headshot="https://images.ctfassets.net/qlhzmho4n1an/6PoXG4MVy610DCdnRoy8Sk/d92b64722813c7917fbd112b081cf6d5/headshot.jpeg" 
         name="Lauren Zaidel" 
-        position="Public Relations: Social Media" 
+        position="Operations: Web Developer" 
         bio="Lauren Zaidel is a rising junior at Palisades Charter High School in Los Angeles, California. She loves coding and STEM, and she’s interested in all things tech! She’s passionate about making sure all voices are heard -  especially representing girls and diverse racial backgrounds in the field. Lauren works on the PR team, writing blog posts and helping with social media management. She’s excited to be involved with Hackguild and help in any way she can!"
       />
-      {/* {bios.map((Biography, index) => 
-      <BioCard key={`${index++}`} headshot={Biography.node.headshot.file.url} name={Biography.node.name} position={Biography.node.position} biography={Biography.node.biography.biography} />
-      )} */}
     </div>
   )
 }
