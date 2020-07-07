@@ -44,11 +44,9 @@ const Statistics = () => {
       </div>
       <div className="row rowWithFullWidth">
         <div className="col-sm-12">
-          <p className="stat-source">
-            <a href="https://csedweek.org/resource_kit/blurbs" target="_blank">
-              Source: https://csedweek.org/resource_kit/blurbs
-            </a>
-          </p>
+          <p><a className="stat-source" href="https://csedweek.org/resource_kit/blurbs" target="_blank">
+              View source: https://csedweek.org/resource_kit/blurbs
+            </a></p>
         </div>
       </div>
     </div>

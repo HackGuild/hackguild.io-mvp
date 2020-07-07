@@ -27,7 +27,7 @@ const Support = () => {
         <p>Supported By</p>
       </div>
       <div className="image-list">
-        <div class="specificimages">
+        <div className="specificimages">
           <img className="notion-logo" src={notion} alt="notion-logo" />
           <img className="builtbygirls-logo" src={builtbygirls} alt="builtbygirls-logo" />
           <img className="google-logo" src={google} alt="google-logo" />
