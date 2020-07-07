@@ -1,7 +1,6 @@
 import React from "react"
 import Helmet from "react-helmet"
-import { About, Team, Layout, Statistics} from "../components/organisms"
-
+import { About, Team, Layout } from "../components/organisms"
 
 const about = () => {
   return (
@@ -13,7 +12,6 @@ const about = () => {
       <Layout>
         <About/>
         <Team/>
-        
       </Layout>
     </>
   )
