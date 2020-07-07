@@ -1,0 +1,86 @@
+@import "./../../main.scss";
+
+.Member{
+    display: inline-block;
+    text-align: left;
+    align-items: center;
+    padding: 20px;
+    border: 2px solid $slate;
+    margin: 50px 0 50px 100px;
+    width: 35%;
+
+    .Headshot{
+        width: 200px;
+        height: 200px;
+        // margin-right: 40px;
+    }
+
+    .MemberInfo{
+        float: right;
+        font-family: $montserrat;
+        font-size: 30px;
+        color: $slate;
+        margin-right: 30px;
+        width: 300px;
+
+    .MemberName {
+      margin-bottom: 25px;
+      font-weight: 500;
+    }
+
+    .MemberPosition {
+      font-weight: 200;
+      overflow-wrap: break-word;
+    }
+
+    .Biography {
+        font-size: 15px;
+    }
+  }
+}
+
+.Modal {
+  background-color: #c0bde0;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 80%;
+  width: 80%;
+  overflow-y: auto;
+}
+
+.Overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.7);
+}
+
+.ModalButton {
+  background-color: transparent;
+  display: inline-block;
+  cursor: pointer;
+  color: $slate;
+  font-family: $montserrat;
+  font-size: 15px;
+  font-weight: bold;
+  border: none;
+}
+.CloseButton {
+  float: right;
+  padding: 20px;
+}
+
+.ModalButton:hover {
+  background-color: transparent;
+  border: none;
+  color: $violet;
+}
+
+.ModalButton:active {
+  position: relative;
+  top: 1px;
+}

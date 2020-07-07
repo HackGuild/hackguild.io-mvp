@@ -1,0 +1,58 @@
+@import "../../main";
+
+.main-footer {
+  color: white;
+  background-color: $violet;
+  padding-top: 3em;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  font-family: $montserrat;
+  display: inline-block;
+  
+  a {
+    text-decoration: none;
+    color: $white;
+  }
+
+  a:hover {
+    text-decoration: none;
+    color: $white; 
+  }
+}
+
+ul {
+  list-style-type: none;
+}
+
+.copyright {
+  color: white;
+  font-size: 12px;
+  font-family: $montserrat;
+  text-align: center;
+}
+
+*.instagram {
+  color: #bc1888;
+}
+
+*.email {
+  color: white;
+}
+
+*.linkedin {
+  color: #0077b5;
+}
+
+*.twitter {
+  color: #00acee;
+}
+
+.col {
+  text-align: center;
+}
+
+.title {
+  font-size: 25px;
+  font-weight: bold;
+}

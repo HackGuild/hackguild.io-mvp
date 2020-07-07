@@ -1,0 +1,74 @@
+@import url("https://use.typekit.net/upg4lus.css");
+
+//Fonts
+$montserrat: "Montserrat", sans-serif;
+
+//Colors
+$coral: #ff534f;
+$neon: #363fff;
+$slate: #082a44;
+$mustard: #fcb14b;
+$teal: #00b8b9;
+$violet: #452081;
+$purple: #c0bde0;
+$white: #fff;
+
+//Grids
+
+//Styles
+body {
+  width: 100vw;
+  height: 100vh;
+  overflow-x: hidden;
+  font-family: $montserrat;
+  margin:0;
+}
+
+//Mixins
+@mixin respond($breakpoint) {
+  @if $breakpoint == phone {
+    @media only screen and (max-width: 376px) {
+      @content;
+    }
+  }
+  @if $breakpoint == tab-port {
+    @media only screen and (max-width: 576px) {
+      @content;
+    }
+  }
+  @if $breakpoint == tab-land {
+    @media only screen and (max-width: 768px) {
+      @content;
+    }
+  }
+  @if $breakpoint == desktop {
+    @media only screen and (min-width: 1024px) {
+      @content;
+    }
+  }
+}
+
+@mixin flex($flex, $fallback-width: 20%) {
+  -webkit-box-flex: $flex; /* OLD - iOS 6-, Safari 3.1-6 */
+  -moz-box-flex: $flex; /* OLD - Firefox 19- */
+  -webkit-flex: $flex; /* Chrome */
+  -ms-flex: $flex; /* IE 10 */
+  flex: $flex;
+  width: $fallback-width; /* Old syntax, otherwise collapses. */
+}
+
+@mixin display-flex() {
+  display: -webkit-box; /* OLD - iOS 6-, Safari 3.1-6 */
+  display: -moz-box; /* OLD - Firefox 19 */
+  display: -ms-flexbox; /* TWEENER - IE 10 */
+  display: -webkit-flex; /* NEW - Chrome */
+  display: flex; /* NEW - Opera 12.1, Firefox 20+ */
+}
+
+@mixin clearfix {
+  &::after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}
