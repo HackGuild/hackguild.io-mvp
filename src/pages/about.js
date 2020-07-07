@@ -2,7 +2,6 @@ import React from "react"
 import Helmet from "react-helmet"
 import { About, Team, Layout } from "../components/organisms"
 
-
 const about = () => {
   return (
     <>
