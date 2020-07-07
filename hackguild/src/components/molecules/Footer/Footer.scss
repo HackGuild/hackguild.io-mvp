@@ -8,7 +8,8 @@
   bottom: 0;
   width: 100%;
   font-family: $montserrat;
-
+  display: inline-block;
+  
   a {
     text-decoration: none;
     color: $white;
@@ -18,6 +19,10 @@
     text-decoration: none;
     color: $white; 
   }
+}
+
+ul {
+  list-style-type: none;
 }
 
 .copyright {
