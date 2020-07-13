@@ -1,6 +1,10 @@
 import React from "react"
 import { Link } from "gatsby"
 import "./Footer.scss"
+import Facebook from "../../../images/001-facebook.svg"
+import Linkedin from "../../../images/010-linkedin.svg"
+import Instagram from "../../../images/011-instagram.svg"
+import Twitter from "../../../images/013-twitter.svg"
 
 class Footer extends React.Component {
   render() {
@@ -8,42 +12,50 @@ class Footer extends React.Component {
       <div className="main-footer">
           <div className="row">
             <div className="col-sm-1">
-              <a
-                href="https://www.facebook.com"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="email"
-              >
+                  <a
+                    href="https://www.facebook.com/HackGuild/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="email"
+                  >
+                <img src={Facebook} alt="facebook" width={50} height={50}>
+                </img>
                 <i class="fa fa-envelope fa-4x" aria-hidden="true"></i>
               </a>
             </div>
             <div className="col-sm-1">
               <a
-                href="https://www.linkedin.com"
+                href="https://www.linkedin.com/company/hackguild/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="linkedin"
               >
+                <img src={Linkedin} alt="linkedin" width={50} height={50}>
+                </img>
                 <i class="fa fa-linkedin-square fa-4x" aria-hidden="true"></i>
               </a>
             </div>
             <div className="col-sm-1">
               <a
-                href="https://www.facebook.com"
+                href="https://www.instagram.com/hackguild/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="instagram"
               >
+                <img src={Instagram} alt="instagram" width={50} height={50}>
+                </img>
                 <i class="fa fa-instagram fa-4x" aria-hidden="true"></i>
               </a>
             </div>
             <div className="col-sm-1">
               <a
-                href="https://www.facebook.com"
+                href="https://twitter.com/hack_guild"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="twitter"
               >
+                <img src={Twitter} alt="twitter" width={50} height={50}>
+                </img>
                 <i class="fa fa-twitter-square fa-4x" aria-hidden="true"></i>
               </a>
             </div>

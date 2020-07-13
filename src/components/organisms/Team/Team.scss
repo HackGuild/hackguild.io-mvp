@@ -2,20 +2,17 @@
 
 .Team {
   display: inline-block;
+  align-items: center;
 
   .team-title {
     background-color: $purple;
-    border-radius: 50px;
+    border-radius: 30px;
     color: $violet;
     padding: 20px;
-    width: 275px;
-    display: block;
-    position: relative;
-    left: 190px;
-    bottom: 55px;
+    margin: 80px 40%;
   }
   
-  .meetteam {
+  .meet-team {
     font-size: 300px;
     text-align: center;
   }
