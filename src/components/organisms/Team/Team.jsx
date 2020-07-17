@@ -1,6 +1,7 @@
 import React from 'react'
 import { BioCard } from "../../molecules"
 import { graphql, StaticQuery } from "gatsby"
+import "./Team.scss"
 
 export default function Team(props) {
 //   const query = useStaticQuery(graphql`
@@ -31,7 +32,7 @@ export default function Team(props) {
     
     <div className="Team">
       <div className="team-title">
-        <h1 className="meet-team">Hackguild Team</h1>
+        <h1 className="meet-team">HackGuild Team</h1>
       </div>
       {/* <StaticQuery query = { graphql`
         query {
@@ -73,6 +74,7 @@ export default function Team(props) {
           />
         )
       })} */}
+      <div className="card-container">
       <BioCard 
         headshot="https://images.ctfassets.net/qlhzmho4n1an/7eKbUmjApNtRqcwbUqtfYJ/213b4083beaaeaceece8f54df13c5532/Isabel-_Headshot-01.png"
         name="Isabel Abonitalla" 
@@ -158,6 +160,7 @@ export default function Team(props) {
         position="Operations: Web Developer" 
         bio="Lauren Zaidel is a rising junior at Palisades Charter High School in Los Angeles, California. She loves coding and STEM, and she’s interested in all things tech! She’s passionate about making sure all voices are heard -  especially representing girls and diverse racial backgrounds in the field. Lauren works on the PR team, writing blog posts and helping with social media management. She’s excited to be involved with Hackguild and help in any way she can!"
       />
+      </div>
     </div>
   )
 }
