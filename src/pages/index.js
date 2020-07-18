@@ -7,7 +7,7 @@ const home = () => {
     <>
       <Helmet>
         <title>HackGuild: increasing access to tech education</title>
-        <meta name="description" content="A global nonprofit dedicated to expanding access to tech education to underserved communities and empowering the next generation of innovators, computer scientists, and tech professionals." />
+        <meta name="description" content="A global nonprofit dedicated to increasing access to tech education to underserved communities and empowering the next generation of innovators, computer scientists, and tech professionals." />
       </Helmet>
       <Layout>
         <Landing />

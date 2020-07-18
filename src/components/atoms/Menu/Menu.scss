@@ -1,0 +1,17 @@
+@import "./../../main.scss";
+
+.container {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 50vw;
+  display: flex;
+  flex-direction: column;
+  background: $violet;
+  opacity: 0.9;
+  z-index: 2;
+
+  .menuList {
+    padding-top: 3rem;
+  }
+}

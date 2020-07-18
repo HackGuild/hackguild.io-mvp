@@ -11,7 +11,7 @@ class Landing extends React.Component {
         <div>
           <h1 className="landing-title">We Are HackGuild.</h1>
           <p className="landing-description">
-            A global nonprofit dedicated to expanding access to tech education
+            A global nonprofit dedicated to increasing access to tech education
             to underserved communities and empowering the next generation of
             innovators, computer scientists, and tech professionals.
           </p>

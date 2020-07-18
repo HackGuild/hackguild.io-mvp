@@ -1,0 +1,26 @@
+@import "./../../main.scss";
+
+.container {
+  opacity: 0;
+  animation: 1s appear forwards;
+
+  .menuItem {
+    font-size: 1.2rem;
+    padding: 1rem 0;
+    margin: 0 5%;
+    color: $white;
+    transition: color 0.2s ease-in-out;
+
+    &:hover {
+      color: $purple;
+    }
+  }
+
+  .line {
+    width: 90%;
+    height: 1px;
+    background: $slate;
+    margin: 0 auto;
+    animation: 0.5s shrink forwards;
+  }
+}
