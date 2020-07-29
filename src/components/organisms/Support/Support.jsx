@@ -23,7 +23,7 @@ const Support = () => {
   return (
     <div>
       <div class="rectangle">
-        <p>Proudly Partnered With</p>
+        <p>Partners & Sponsors</p>
       </div>
       <div className="image-list">
         <div className="specificimages">
