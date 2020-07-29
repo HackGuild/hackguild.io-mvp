@@ -29,7 +29,7 @@ const Support = () => {
       </div>
       <div className="image-list">
         <div className="specificimages">
-		  <img className="visionary-logo" src={visionary} alt="visionary-logo" />
+          <img className="visionary-logo" src={visionary} alt="visionary-logo" />
           <img className="notion-logo" src={notion} alt="notion-logo" />
           <img className="builtbygirls-logo" src={builtbygirls} alt="builtbygirls-logo" />
           <img className="google-logo" src={google} alt="google-logo" />
