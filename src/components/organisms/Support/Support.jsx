@@ -2,6 +2,7 @@ import React from "react"
 import { graphql, useStaticQuery } from "gatsby"
 import Img from "gatsby-image"
 import "./Support.scss"
+import visionary from "../../../images/visionary-logo.png"
 import notion from "../../../images/notion-logo.png"
 import builtbygirls from "../../../images/builtbygirls-logo.png"
 import google from "../../../images/google-logo.png"
@@ -28,6 +29,7 @@ const Support = () => {
       </div>
       <div className="image-list">
         <div className="specificimages">
+		  <img className="visionary-logo" src={visionary} alt="visionary-logo" />
           <img className="notion-logo" src={notion} alt="notion-logo" />
           <img className="builtbygirls-logo" src={builtbygirls} alt="builtbygirls-logo" />
           <img className="google-logo" src={google} alt="google-logo" />
