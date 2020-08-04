@@ -5,6 +5,7 @@ import Mission from "./Mission"
 import Statistics from "./Statistics"
 import Support from "./Support"
 import Layout from "./Layout"
+import Events from "./Events"
 
 export {
     About,
@@ -13,5 +14,6 @@ export {
     Mission,
     Statistics,
     Support,
-    Layout
+    Layout,
+    Events
 }
