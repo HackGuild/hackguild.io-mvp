@@ -2,7 +2,7 @@ import React from "react"
 import Helmet from "react-helmet"
 import { Events, Layout } from "../components/organisms"
 
-const about = () => {
+const EventPage = () => {
   return (
     <>
       <Helmet>
@@ -15,4 +15,4 @@ const about = () => {
     </>
   )
 }
-export default about
+export default EventPage
