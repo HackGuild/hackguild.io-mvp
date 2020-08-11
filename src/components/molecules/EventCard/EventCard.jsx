@@ -1,9 +1,24 @@
 import React, { Component } from "react"
 import "./EventCard.scss"
 import ReactModal from "react-modal"
-import Biography from "../Biography"
 
-const EventCard = Biography
+function Event({ photo, name, eventType, description }) {
+  return (
+    <React.Fragment>
+      <div className="EventCard">
+        <div className="Header">
+          <img src={photo} alt={name} className="Photo" />
+          <div className="EventInfo">
+            <h3 className="EventName">{name}</h3>
+            <h5 className="EventType">{eventType}</h5>
+          </div>
+          <div className="EventDescription">{description}</div>
+        </div>
+      </div>
+    </React.Fragment>
+  )
+}
+
 
 class EventContainer extends Component {
   constructor() {
@@ -26,21 +41,21 @@ class EventContainer extends Component {
   render() {
     return (
       <React.Fragment>
-        <div className="Member">
+        <div className="Event">
           <img
-            src={this.props.headshot}
+            src={this.props.photo}
             alt={this.props.name}
-            className="Headshot"
+            className="Photo"
           />
-          <div className="MemberInfo">
-            <h3 className="MemberName">{this.props.name}</h3>
-            <h5 className="MemberPosition">{this.props.position}</h5>
+          <div className="EventInfo">
+            <h3 className="EventName">{this.props.name}</h3>
+            <h5 className="EventType Truncate">{this.props.subtitle}</h5>
             <button class="ModalButton" onClick={this.handleOpenModal}>
               Click for more
             </button>
             <ReactModal
               isOpen={this.state.showModal}
-              contentLabel="Biography"
+              contentLabel="Event Description"
               className="Modal"
               overlayClassName="Overlay"
             >
@@ -50,12 +65,7 @@ class EventContainer extends Component {
               >
                 Close
               </button>
-              <Biography
-                headshot={this.props.headshot}
-                name={this.props.name}
-                position={this.props.position}
-                bio={this.props.bio}
-              />
+              <Event {...this.props} />
             </ReactModal>
           </div>
         </div>
@@ -64,4 +74,4 @@ class EventContainer extends Component {
   }
 }
 
-export {EventCard,EventContainer}
+export {Event,EventContainer}

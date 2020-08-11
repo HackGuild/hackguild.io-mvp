@@ -1,6 +1,6 @@
 @import "./../../main.scss";
 
-.Member{
+.Event{
     display: inline-block;
     text-align: left;
     align-items: center;
@@ -9,13 +9,12 @@
     margin: 50px 0 50px 100px;
     width: 35%;
 
-    .Headshot{
+    .Photo{
         width: 200px;
         height: 200px;
-        // margin-right: 40px;
     }
 
-    .MemberInfo{
+    .EventInfo{
         float: right;
         font-family: $montserrat;
         font-size: 30px;
@@ -23,17 +22,17 @@
         margin-right: 30px;
         width: 300px;
 
-    .MemberName {
+    .EventName {
       margin-bottom: 25px;
       font-weight: 500;
     }
 
-    .MemberPosition {
+    .EventType {
       font-weight: 200;
       overflow-wrap: break-word;
     }
 
-    .Biography {
+    .EventDescription {
         font-size: 15px;
     }
   }
@@ -86,31 +85,31 @@
 }
 
 
-.Biography {
-  .Headshot {
+.EventCard {
+  .Photo {
     height: 25%;
     width: 40%;
     padding: 4% 4% 4% 12%!important;
   }
 
-  .MemberInfo {
+  .EventInfo {
     float: right;
     width: 45%;
     padding: 150px 100px 0 0;
     font-family: $montserrat;
     color: $slate;
 
-    .MemberName {
+    .EventName {
       font-size: 3rem;
       font-weight: bold;
     }
-    .MemberPosition {
+    .EventType {
       font-size: 2rem;
       font-weight: regular;
     }
   }
 
-  .BioParagraph {
+  .EventDescription {
     margin: 0 12%;
     font-size: 20px;
     line-height: 35px;
