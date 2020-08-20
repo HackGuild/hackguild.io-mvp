@@ -17,11 +17,16 @@ $white: #fff;
 
 //Styles
 body {
-  width: 100vw;
+  width: auto;
   height: 100vh;
+  // display: flex;
   overflow-x: hidden;
   font-family: $montserrat;
   margin: 0;
+}
+// page
+html {
+  width: fit-content;
 }
 
 //Mixins
