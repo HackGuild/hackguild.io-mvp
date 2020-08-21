@@ -29,7 +29,7 @@
       font-family: $montserrat;
       font-size: xx-large;
       font-weight: bold;
-      line-height: 110px;
+      line-height: 50px;
       color: white;
       width: 80%;
       text-align: center;
@@ -44,11 +44,18 @@
     position: relative;
     bottom: 50px;
     left: 2vw;
+    font-size: large;
   }
 
   .landing-description {
     padding: 1vh 5vw;
     font-size: 2vw;
+    @include respond("small") {
+      width: 100%;
+      margin: 0px;
+      margin-top: 20px;
+      width: 80%;
+    }
   }
 
   .landing-button:hover {
@@ -66,7 +73,7 @@
     top: 80%;
     left: 16.5%;
     transform: translateY(-5%) translateX(-50%);
-    @include respond('small') {
+    @include respond("small") {
       transform: unset;
       position: unset;
       margin: auto;
