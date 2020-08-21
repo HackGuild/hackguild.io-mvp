@@ -10,7 +10,7 @@
   font-family: $montserrat;
   display: inline-block;
   padding-left: 50px;
-  @include respond('phone') {
+  @include respond('small') {
     display: flex;
   }
   
@@ -55,7 +55,7 @@ ul {
 
 .col {
   text-align: center;
-  @include respond('phone') {
+  @include respond('medium') {
     text-align: left;
     display: contents;
   }

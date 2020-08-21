@@ -9,7 +9,7 @@
     margin: 50px 0 50px 100px;
     min-width: fit-content;
     width: 35%;
-    @include respond('phone') {
+    @include respond('small') {
       margin: 10px;
     }
 

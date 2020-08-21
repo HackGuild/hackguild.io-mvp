@@ -28,28 +28,26 @@ body {
 html {
   width: fit-content;
 }
+$breakpoints: (
+  'small':  767px,
+  'medium': 992px,
+  'large':  1200px
+) !default;
 
-//Mixins
+//Mixins https://css-tricks.com/snippets/sass/mixin-manage-breakpoints/
 @mixin respond($breakpoint) {
-  @if $breakpoint == phone {
-    @media only screen and (max-width: 425px) {
+  // If the key exists in the map
+  @if map-has-key($breakpoints, $breakpoint) {
+    // Prints a media query based on the value
+    @media (max-width: map-get($breakpoints, $breakpoint)) {
       @content;
     }
   }
-  @if $breakpoint == tab-port {
-    @media only screen and (max-width: 576px) {
-      @content;
-    }
-  }
-  @if $breakpoint == tab-land {
-    @media only screen and (max-width: 768px) {
-      @content;
-    }
-  }
-  @if $breakpoint == desktop {
-    @media only screen and (min-width: 1024px) {
-      @content;
-    }
+ 
+  // If the key doesn't exist in the map
+  @else {
+    @warn "Unfortunately, no value could be retrieved from `#{$breakpoint}`. "
+        + "Available breakpoints are: #{map-keys($breakpoints)}.";
   }
 }
 

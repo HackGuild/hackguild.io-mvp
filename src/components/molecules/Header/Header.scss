@@ -19,7 +19,7 @@ header {
     position: absolute;
     top: 0;
     right: 0;
-    @include respond('phone') {
+    @include respond('small') {
       float: none;
       position: relative;
     }
@@ -35,7 +35,7 @@ header {
         color: $white;
         display: inline-block;
         padding: 40px;
-        @include respond('phone') {
+        @include respond('small') {
           display: block;
           padding: 20px;
           margin: 10px 0px 10px 0px;
