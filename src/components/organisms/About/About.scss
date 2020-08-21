@@ -11,15 +11,19 @@
     margin-left: 0;
     margin-right: 0;
 
+        @include respond('phone') {
+          width: 100%;
+          padding: 10px;
+        }
     .Heading {
         margin-bottom: 44px;
-        font-size: 60px;
+        font-size: xx-large;
         position: relative;
     }
   
     .Bullet {
         line-height: 40px;
-        font-size: 30px;
+        font-size: x-large;
         position: relative;
         left: 2vw;
     }
