@@ -15,7 +15,7 @@
     float: right;
     padding: 20px 70px 0px 0px;
   }
-  
+
   .landing-title {
     font-family: $montserrat;
     font-size: 4vw;
@@ -25,8 +25,21 @@
     padding: 8vh;
     position: relative;
     left: 3vw;
+    @include respond("small") {
+      font-family: $montserrat;
+      font-size: xx-large;
+      font-weight: bold;
+      line-height: 110px;
+      color: white;
+      width: 80%;
+      text-align: center;
+      margin: 0px;
+      padding-top: 10px;
+      position: relative;
+      left: 3vw;
+    }
   }
-  
+
   p {
     position: relative;
     bottom: 50px;
@@ -41,7 +54,7 @@
   .landing-button:hover {
     background-color: $mustard;
   }
-  
+
   .landing-button {
     background-color: $teal;
     border-radius: 50px;
@@ -53,6 +66,11 @@
     top: 80%;
     left: 16.5%;
     transform: translateY(-5%) translateX(-50%);
+    @include respond('small') {
+      transform: unset;
+      position: unset;
+      margin: auto;
+    }
 
     h1 {
       font-weight: 700;
@@ -66,7 +84,7 @@
       color: $white;
       display: inline-block;
     }
-    
+
     a:hover {
       text-decoration: none;
       color: $white;

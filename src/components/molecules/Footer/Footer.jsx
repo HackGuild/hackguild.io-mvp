@@ -10,7 +10,7 @@ class Footer extends React.Component {
   render() {
     return (
       <div className="main-footer">
-          <div className="row">
+          <div className="row responsive">
             <div className="col-sm-1">
                   <a
                     href="https://www.facebook.com/HackGuild/"
@@ -94,7 +94,7 @@ class Footer extends React.Component {
               </ul>
             </div>
           </div>
-          <div className="row">
+          <div className="row responsive">
             <p className="col-sm copyright">
               &copy; 2020 HackGuild, built with love & Gatsby. Work in Progress. All rights reserved.
             </p>
