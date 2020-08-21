@@ -62,7 +62,7 @@ class Footer extends React.Component {
 
             {/* Column1 */}
             <div className="col all-links">
-              <ul className="list-unstyled">
+              <ul className="list-unstyled home-link">
                 <li className="title"><Link to="/">Home</Link></li>
               </ul>
             </div>
