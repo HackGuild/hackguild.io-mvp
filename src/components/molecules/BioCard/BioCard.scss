@@ -7,7 +7,11 @@
     padding: 20px;
     border: 2px solid $slate;
     margin: 50px 0 50px 100px;
+    min-width: fit-content;
     width: 35%;
+    @include respond('phone') {
+      margin: 10px;
+    }
 
     .Headshot{
         width: 200px;

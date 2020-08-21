@@ -32,7 +32,7 @@ html {
 //Mixins
 @mixin respond($breakpoint) {
   @if $breakpoint == phone {
-    @media only screen and (max-width: 376px) {
+    @media only screen and (max-width: 425px) {
       @content;
     }
   }
