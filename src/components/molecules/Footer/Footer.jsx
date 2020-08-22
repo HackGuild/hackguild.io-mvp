@@ -10,8 +10,8 @@ class Footer extends React.Component {
   render() {
     return (
       <div className="main-footer">
-          <div className="row">
-            <div className="col-sm-1">
+          <div className="row responsive">
+            <div className="col-sm-1 icon-responsive">
                   <a
                     href="https://www.facebook.com/HackGuild/"
                     target="_blank"
@@ -23,7 +23,7 @@ class Footer extends React.Component {
                 <i class="fa fa-envelope fa-4x" aria-hidden="true"></i>
               </a>
             </div>
-            <div className="col-sm-1">
+            <div className="col-sm-1 icon-responsive">
               <a
                 href="https://www.linkedin.com/company/hackguild/"
                 target="_blank"
@@ -35,7 +35,7 @@ class Footer extends React.Component {
                 <i class="fa fa-linkedin-square fa-4x" aria-hidden="true"></i>
               </a>
             </div>
-            <div className="col-sm-1">
+            <div className="col-sm-1 icon-responsive">
               <a
                 href="https://www.instagram.com/hackguild/"
                 target="_blank"
@@ -47,7 +47,7 @@ class Footer extends React.Component {
                 <i class="fa fa-instagram fa-4x" aria-hidden="true"></i>
               </a>
             </div>
-            <div className="col-sm-1">
+            <div className="col-sm-1 icon-responsive">
               <a
                 href="https://twitter.com/hack_guild"
                 target="_blank"
@@ -62,7 +62,7 @@ class Footer extends React.Component {
 
             {/* Column1 */}
             <div className="col all-links">
-              <ul className="list-unstyled">
+              <ul className="list-unstyled home-link">
                 <li className="title"><Link to="/">Home</Link></li>
               </ul>
             </div>
@@ -94,7 +94,7 @@ class Footer extends React.Component {
               </ul>
             </div>
           </div>
-          <div className="row">
+          <div className="row responsive">
             <p className="col-sm copyright">
               &copy; 2020 HackGuild, built with love & Gatsby. Work in Progress. All rights reserved.
             </p>

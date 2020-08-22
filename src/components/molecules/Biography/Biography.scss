@@ -4,7 +4,7 @@
   .Headshot {
     height: 25%;
     width: 40%;
-    padding: 4% 4% 4% 12%!important;
+    padding: 4% 4% 4% 12% !important;
   }
 
   .MemberInfo {
@@ -13,6 +13,16 @@
     padding: 150px 100px 0 0;
     font-family: $montserrat;
     color: $slate;
+    @include respond("small") {
+      float: unset;
+      width: unset;
+      padding: 40px;
+    }
+    @include respond("medium") {
+      float: unset;
+      width: unset;
+      padding: 80px;
+    }
 
     .MemberName {
       font-size: 3rem;

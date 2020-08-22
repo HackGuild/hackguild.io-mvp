@@ -2,7 +2,7 @@
 @import url("https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css");
 
 .About{
-    width: 100vw;
+    width: auto; // 100vw causes mobile overflow
     margin: -10px 0 0 -10px;
     padding: 50px 100px 100px 100px;
     background: $violet;
@@ -11,16 +11,23 @@
     margin-left: 0;
     margin-right: 0;
 
+        @include respond('small') {
+          width: 100%;
+          padding: 10px;
+        }
     .Heading {
         margin-bottom: 44px;
-        font-size: 60px;
+        font-size: xx-large;
         position: relative;
     }
   
     .Bullet {
         line-height: 40px;
-        font-size: 30px;
+        font-size: x-large;
         position: relative;
         left: 2vw;
+        @include respond('small') {
+          width: 90%;
+        }
     }
 }

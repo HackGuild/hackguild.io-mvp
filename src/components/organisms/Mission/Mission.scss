@@ -11,7 +11,7 @@
     float: left;
     margin: 0px 20px 50px 50px;
   }
-  
+
   .mission-text {
     font-family: $montserrat;
     font-size: 1.7vw;
@@ -20,6 +20,8 @@
     right: 50px;
     padding: 40px 40px 120px 40px;
     color: $slate !important;
+    @include respond("small") {
+      font-size: large;
+    }
   }
 }
-
