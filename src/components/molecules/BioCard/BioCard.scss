@@ -38,6 +38,7 @@
     @include respond("small") {
       align-items: left;
       margin-right: 0px;
+      margin-left: 10px;
       width: inherit;
     }
 
