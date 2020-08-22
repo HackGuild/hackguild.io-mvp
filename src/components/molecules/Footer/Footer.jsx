@@ -11,7 +11,7 @@ class Footer extends React.Component {
     return (
       <div className="main-footer">
           <div className="row responsive">
-            <div className="col-sm-1">
+            <div className="col-sm-1 icon-responsive">
                   <a
                     href="https://www.facebook.com/HackGuild/"
                     target="_blank"
@@ -23,7 +23,7 @@ class Footer extends React.Component {
                 <i class="fa fa-envelope fa-4x" aria-hidden="true"></i>
               </a>
             </div>
-            <div className="col-sm-1">
+            <div className="col-sm-1 icon-responsive">
               <a
                 href="https://www.linkedin.com/company/hackguild/"
                 target="_blank"
@@ -35,7 +35,7 @@ class Footer extends React.Component {
                 <i class="fa fa-linkedin-square fa-4x" aria-hidden="true"></i>
               </a>
             </div>
-            <div className="col-sm-1">
+            <div className="col-sm-1 icon-responsive">
               <a
                 href="https://www.instagram.com/hackguild/"
                 target="_blank"
@@ -47,7 +47,7 @@ class Footer extends React.Component {
                 <i class="fa fa-instagram fa-4x" aria-hidden="true"></i>
               </a>
             </div>
-            <div className="col-sm-1">
+            <div className="col-sm-1 icon-responsive">
               <a
                 href="https://twitter.com/hack_guild"
                 target="_blank"

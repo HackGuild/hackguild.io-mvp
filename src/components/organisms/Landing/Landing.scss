@@ -51,7 +51,7 @@
     padding: 1vh 5vw;
     font-size: 2vw;
     @include respond("small") {
-      width: 100%;
+      font-size: large;
       margin: 0px;
       margin-top: 20px;
       width: 80%;

@@ -71,3 +71,11 @@ ul {
     width: 50%;
   }
 }
+.icon-responsive {
+  a img {
+    margin: 10px;
+  }
+  @include respond("medium") {
+    display: contents;
+  }
+}
