@@ -15,7 +15,8 @@
     margin-bottom: 10px;
     display: flex;
     align-items: left;
-    min-width: fit-content;
+    // min-width: fit-content;
+    width: inherit;
   }
 
   .Headshot {
@@ -37,16 +38,23 @@
     @include respond("small") {
       align-items: left;
       margin-right: 0px;
+      width: inherit;
     }
 
     .MemberName {
       margin-bottom: 25px;
       font-weight: 500;
+      @include respond("small") {
+        font-size: x-large;
+      }
     }
 
     .MemberPosition {
       font-weight: 200;
       overflow-wrap: break-word;
+      @include respond("small") {
+        font-size: large;
+      }
     }
 
     .Biography {
