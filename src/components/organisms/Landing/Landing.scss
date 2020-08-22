@@ -73,7 +73,7 @@
     top: 80%;
     left: 16.5%;
     transform: translateY(-5%) translateX(-50%);
-    @include respond("small") {
+    @include respond("medium") {
       transform: unset;
       position: unset;
       margin: auto;

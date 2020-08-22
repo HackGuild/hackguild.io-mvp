@@ -3,6 +3,9 @@
 .Team {
   display: inline-block;
   align-items: center;
+  @include respond("small") {
+    width: 100%;
+  }
 
   .team-title {
     background-color: $purple;
@@ -10,8 +13,14 @@
     color: $violet;
     padding: 20px;
     margin: 30px 40%;
+    @include respond("medium") {
+      // width: 100%;
+      width: fit-content;
+      margin: auto;
+      margin-top: 10px;
+    }
   }
-  
+
   .meet-team {
     font-size: 30px;
     text-align: center;

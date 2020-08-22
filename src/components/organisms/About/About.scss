@@ -26,5 +26,8 @@
         font-size: x-large;
         position: relative;
         left: 2vw;
+        @include respond('small') {
+          width: 90%;
+        }
     }
 }

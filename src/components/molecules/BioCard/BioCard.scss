@@ -1,31 +1,43 @@
 @import "./../../main.scss";
 
-.Member{
-    display: inline-block;
-    text-align: left;
-    align-items: center;
-    padding: 20px;
-    border: 2px solid $slate;
-    margin: 50px 0 50px 100px;
+.Member {
+  display: inline-block;
+  text-align: left;
+  align-items: center;
+  padding: 20px;
+  border: 2px solid $slate;
+  margin: 50px 0 50px 100px;
+  min-width: fit-content;
+  width: 35%;
+  @include respond("small") {
+    margin: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: left;
     min-width: fit-content;
-    width: 35%;
-    @include respond('small') {
-      margin: 10px;
-    }
+  }
 
-    .Headshot{
-        width: 200px;
-        height: 200px;
-        // margin-right: 40px;
+  .Headshot {
+    width: 200px;
+    height: 200px;
+    @include respond("small") {
+      width: 150px;
+      height: 150px;
     }
+  }
 
-    .MemberInfo{
-        float: right;
-        font-family: $montserrat;
-        font-size: 30px;
-        color: $slate;
-        margin-right: 30px;
-        width: 300px;
+  .MemberInfo {
+    float: right;
+    font-family: $montserrat;
+    font-size: 30px;
+    color: $slate;
+    margin-right: 30px;
+    width: 300px;
+    @include respond("small") {
+      align-items: left;
+      margin-right: 0px;
+    }
 
     .MemberName {
       margin-bottom: 25px;
@@ -38,7 +50,7 @@
     }
 
     .Biography {
-        font-size: 15px;
+      font-size: 15px;
     }
   }
 }
