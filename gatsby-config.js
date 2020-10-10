@@ -1,4 +1,4 @@
-require('dotenv').config()
+require("dotenv").config()
 module.exports = {
   siteMetadata: {
     title: `HackGuild`,
@@ -6,6 +6,8 @@ module.exports = {
     author: `Isabel Abonitalla, Kinnera Banda, Lily Gong, Anushka Saxena, Lauren Zaiden`,
   },
   plugins: [
+    `gatsby-plugin-less`,
+    `gatsby-plugin-react-helmet`,
     `gatsby-plugin-sass`,
     `gatsby-plugin-react-helmet`,
     {
