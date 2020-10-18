@@ -3,6 +3,7 @@ import "semantic-ui-less/semantic.less"
 import {
   Button,
   Container,
+  Card,
   Header,
   Grid,
   Image,
@@ -14,7 +15,6 @@ import {
 export default function SemanticTest() {
   return (
     <>
-      
       <Container fluid style={{ padding: "8em" }}>
         <Segment vertical>
           <Grid stackable verticalAlign="middle" columns="2">
@@ -69,6 +69,21 @@ export default function SemanticTest() {
           <Button primary>Primary</Button>
           <Button secondary>Secondary</Button>
         </Segment>
+        <Container>
+          <Card fluid color="purple" header='Interested in contributing?'>
+            {/* <Grid stackable verticalAlign="middle" columns="2">
+              <Grid.Row>
+                <Grid.Column width={8}>
+                </Grid.Column>
+                <Grid.Column floated="right" width={6}>
+                  <Button primary size="huge">
+                    Check Them Out
+                  </Button>
+                </Grid.Column>
+              </Grid.Row>
+            </Grid> */}
+          </Card>
+        </Container>
       </Container>
     </>
   )
