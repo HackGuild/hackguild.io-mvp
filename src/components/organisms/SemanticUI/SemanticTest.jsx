@@ -10,6 +10,7 @@ import {
   Icon,
   Segment,
   GridRow,
+  GridColumn,
 } from "semantic-ui-react"
 
 export default function SemanticTest() {
@@ -61,7 +62,7 @@ export default function SemanticTest() {
           <Header as="h2" textAlign="center" color="violet">
             Our Team
             <Header.Subheader>
-              This page contains some helpful examples that can be usefull for
+              This page contains some helpful examples that can be useful for
               advanced layouts.
             </Header.Subheader>
           </Header>
@@ -69,21 +70,119 @@ export default function SemanticTest() {
           <Button primary>Primary</Button>
           <Button secondary>Secondary</Button>
         </Segment>
-        <Container>
-          <Card fluid color="purple" header='Interested in contributing?'>
-            {/* <Grid stackable verticalAlign="middle" columns="2">
-              <Grid.Row>
-                <Grid.Column width={8}>
-                </Grid.Column>
-                <Grid.Column floated="right" width={6}>
-                  <Button primary size="huge">
-                    Check Them Out
+        
+        {/* Fluid segment with button on the right*/}
+        <Segment raised>
+          <Grid stackable verticalAlign="middle" columns="2" container style={{ padding: '1em 0em' }}>
+            <Grid.Row>
+              <Grid.Column width={10}>
+                <Header as="h2" color="violet">
+                  Interested in contributing?
+                </Header>
+                <Header.Subheader>
+                  We can give your company superpowers to do things that they
+                  never thought possible. Let us delight your customers and
+                  empower your needs... through pure data analytics.
+                </Header.Subheader>
+              </Grid.Column>
+              <Grid.Column width={6}>
+                <Button primary floated="right" size="huge">
+                  Check Them Out
                   </Button>
-                </Grid.Column>
-              </Grid.Row>
-            </Grid> */}
-          </Card>
-        </Container>
+              </Grid.Column>
+            </Grid.Row>
+          </Grid>
+        </Segment>
+
+        {/* Team Bio Cards */}
+        <Grid columns={4} stackable>
+          {/* First row of members */}
+          <Grid.Row>
+            <Grid.Column>
+              <Card raised>
+                <Image src="https://via.placeholder.com/150" wrapped ui={false} />
+                <Card.Content>
+                  <Card.Header>Name</Card.Header>
+                  <Card.Meta>Member</Card.Meta>
+                </Card.Content>
+              </Card>
+            </Grid.Column>
+
+            <Grid.Column>
+              <Card raised>
+                <Image src="https://via.placeholder.com/150" wrapped ui={false} />
+                <Card.Content>
+                  <Card.Header>Name</Card.Header>
+                  <Card.Meta>Member</Card.Meta>
+                </Card.Content>
+              </Card>
+            </Grid.Column>
+
+            <Grid.Column>
+              <Card raised>
+                <Image src="https://via.placeholder.com/150" wrapped ui={false} />
+                <Card.Content>
+                  <Card.Header>Name</Card.Header>
+                  <Card.Meta>Member</Card.Meta>
+                </Card.Content>
+              </Card>
+            </Grid.Column>
+
+            <Grid.Column>
+              <Card raised>
+                <Image src="https://via.placeholder.com/150" wrapped ui={false} />
+                <Card.Content>
+                  <Card.Header>Name</Card.Header>
+                  <Card.Meta>Member</Card.Meta>
+                </Card.Content>
+              </Card>
+            </Grid.Column>
+          </Grid.Row>
+
+          {/* Second row of members */}
+          <Grid.Row>
+            <Grid.Column>
+              <Card raised>
+                <Image src="https://via.placeholder.com/150" wrapped ui={false} />
+                <Card.Content>
+                  <Card.Header>Name</Card.Header>
+                  <Card.Meta>Member</Card.Meta>
+                </Card.Content>
+              </Card>
+            </Grid.Column>
+
+            <Grid.Column>
+              <Card raised>
+                <Image src="https://via.placeholder.com/150" wrapped ui={false} />
+                <Card.Content>
+                  <Card.Header>Name</Card.Header>
+                  <Card.Meta>Member</Card.Meta>
+                </Card.Content>
+              </Card>
+            </Grid.Column>
+
+            <Grid.Column>
+              <Card raised>
+                <Image src="https://via.placeholder.com/150" wrapped ui={false} />
+                <Card.Content>
+                  <Card.Header>Name</Card.Header>
+                  <Card.Meta>Member</Card.Meta>
+                </Card.Content>
+              </Card>
+            </Grid.Column>
+
+            <Grid.Column>
+              <Card raised>
+                <Image src="https://via.placeholder.com/150" wrapped ui={false} />
+                <Card.Content>
+                  <Card.Header>Name</Card.Header>
+                  <Card.Meta>Member</Card.Meta>
+                </Card.Content>
+              </Card>
+            </Grid.Column>
+          </Grid.Row>
+        </Grid>
+        
       </Container>
     </>
   )
