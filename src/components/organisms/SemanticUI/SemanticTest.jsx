@@ -11,6 +11,7 @@ import {
   Segment,
   GridRow,
   GridColumn,
+  Input,
 } from "semantic-ui-react"
 
 export default function SemanticTest() {
@@ -182,7 +183,7 @@ export default function SemanticTest() {
             </Grid.Column>
           </Grid.Row>
         </Grid>
-        
+        <Input></Input>
       </Container>
     </>
   )
