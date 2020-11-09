@@ -88,7 +88,7 @@ class Footer extends React.Component {
               <ul className="list-unstyled">
                 <li className="title">Get Involved</li>
                 <li><Link to="https://forms.gle/QBJa8uDGLf3cyNSp8">Internship</Link></li>
-                <li><Link to="https://forms.gle/4eUvcoVoXuvagjXe6">Event Organizer</Link></li>
+                <li><Link to="https://discord.gg/fpmQFvh">Event Organizer</Link></li>
                 <li><a href="mailto:team@hackguild.io?subject=HackGuild Sponsorship Information">Sponsor</a></li>
                 <li><a href="mailto:team@hackguild.io?subject=HackGuild Donation Information">Donate</a></li>
               </ul>
