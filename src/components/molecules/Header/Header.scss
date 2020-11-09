@@ -2,7 +2,7 @@
 
 header {
     background-color: $violet;
-    width: 100vw;
+    // width: 100vw;
     overflow: hidden;
     margin: 0;
     padding: 0;
@@ -19,6 +19,10 @@ header {
     position: absolute;
     top: 0;
     right: 0;
+    @include respond('small') {
+      float: none;
+      position: relative;
+    }
 
     h1 {
         font-weight: 700;
@@ -31,6 +35,11 @@ header {
         color: $white;
         display: inline-block;
         padding: 40px;
+        @include respond('small') {
+          display: block;
+          padding: 20px;
+          margin: 10px 0px 10px 0px;
+        }
     }
 
     a:hover {
