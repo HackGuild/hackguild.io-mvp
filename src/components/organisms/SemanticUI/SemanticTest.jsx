@@ -104,24 +104,26 @@ export default function SemanticTest() {
         </Segment>
 
         {/* Team Bio Cards */}
-        <Grid columns={4} stackable>
-          {/* First row of members */}
-          {PlaceHolderNames.map(({ name, title }) => (
-            <Grid.Column>
-              <Card raised>
-                <Image
-                  src="https://via.placeholder.com/150"
-                  wrapped
-                  ui={false}
-                />
-                <Card.Content>
-                  <Card.Header>{name}</Card.Header>
-                  <Card.Meta>{title}</Card.Meta>
-                </Card.Content>
-              </Card>
-            </Grid.Column>
-          ))}
-        </Grid>
+        <Container>
+          <Grid columns={4} doubling centered stackable padded>
+            {/* First row of members */}
+            {PlaceHolderNames.map(({ name, title }) => (
+              <Grid.Column>
+                <Card raised >
+                  <Image
+                    src="https://via.placeholder.com/150"
+                    wrapped
+                    ui={false}
+                  />
+                  <Card.Content>
+                    <Card.Header>{name}</Card.Header>
+                    <Card.Meta>{title}</Card.Meta>
+                  </Card.Content>
+                </Card>
+              </Grid.Column>
+            ))}
+          </Grid>
+        </Container>
       </Container>
     </>
   )
