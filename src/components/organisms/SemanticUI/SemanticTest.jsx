@@ -1,3 +1,4 @@
+import { string } from "prop-types"
 import React from "react"
 import "semantic-ui-less/semantic.less"
 import {
@@ -58,40 +59,43 @@ export default function SemanticTest() {
                 <Button primary size="huge">
                   Check Them Out
                 </Button>
+                <Button primary>Primary</Button>
+                <Button secondary>Secondary</Button>
               </Grid.Column>
             </Grid.Row>
           </Grid>
 
-          <Button primary>Primary</Button>
-          <Button secondary>Secondary</Button>
           {/* Fluid segment with button on the right*/}
-          <Segment raised>
-            <Grid
-              stackable
-              verticalAlign="middle"
-              columns="2"
-              container
-              style={{ padding: "1em 0em" }}
-            >
-              <Grid.Row>
-                <Grid.Column width={8}>
-                  <Header as="h2" color="violet">
-                    Interested in contributing?
-                  </Header>
-                  <Header.Subheader>
-                    We can give your company superpowers to do things that they
-                    never thought possible. Let us delight your customers and
-                    empower your needs... through pure data analytics.
-                  </Header.Subheader>
-                </Grid.Column>
-                <Grid.Column width={4}>
-                  <Button primary floated="right" size="huge">
-                    Check Them Out
-                  </Button>
-                </Grid.Column>
-              </Grid.Row>
-            </Grid>
-          </Segment>
+          <Grid
+            centered
+            stackable
+            verticalAlign="middle"
+            columns="2"
+            container
+            style={{ padding: "1em 0em" }}
+          >
+            <Segment raised padded>
+              <Grid padded stackable>
+                <Grid.Row centered stackable>
+                  <Grid.Column width={12}>
+                    <Header as="h2" color="violet">
+                      Interested in contributing?
+                    </Header>
+                    <Header.Subheader>
+                      We can give your company superpowers to do things that
+                      they never thought possible. Let us delight your customers
+                      and empower your needs... through pure data analytics.
+                    </Header.Subheader>
+                  </Grid.Column>
+                  <Grid.Column width={4}>
+                    <Button primary size="huge">
+                      Check Them Out
+                    </Button>
+                  </Grid.Column>
+                </Grid.Row>
+              </Grid>
+            </Segment>
+          </Grid>
 
           {/* Design: page 2 Learn more about the members behind HackGuild */}
           <Header as="h2" textAlign="center" color="violet">
@@ -109,7 +113,7 @@ export default function SemanticTest() {
             {/* First row of members */}
             {PlaceHolderNames.map(({ name, title }) => (
               <Grid.Column>
-                <Card raised >
+                <Card raised>
                   <Image
                     src="https://via.placeholder.com/150"
                     wrapped
@@ -124,6 +128,30 @@ export default function SemanticTest() {
             ))}
           </Grid>
         </Container>
+
+        <Grid container columns={3} stackable>
+          <Grid.Column>
+            <Container textAlign="center" padded>
+              <Image src="https://react.semantic-ui.com/images/wireframe/image.png" />
+              teach <strong> Computer Science</strong> <br />
+              as part of their curriculum
+            </Container>
+          </Grid.Column>
+          <Grid.Column>
+            <Container textAlign="center" padded>
+              <Image src="https://react.semantic-ui.com/images/wireframe/image.png" />
+              teach <strong> Computer Science</strong> <br />
+              as part of their curriculum
+            </Container>
+          </Grid.Column>
+          <Grid.Column>
+            <Container textAlign="center" padded>
+              <Image src="https://react.semantic-ui.com/images/wireframe/image.png" />
+              teach <strong> Computer Science</strong> <br />
+              as part of their curriculum
+            </Container>
+          </Grid.Column>
+        </Grid>
       </Container>
     </>
   )
