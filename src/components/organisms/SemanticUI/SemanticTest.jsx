@@ -133,21 +133,21 @@ export default function SemanticTest() {
         <Grid container columns={3} stackable>
           <Grid.Column>
             <Container textAlign="center" padded>
-              <Image src="https://react.semantic-ui.com/images/wireframe/image.png" />
+              <Image src="https://react.semantic-ui.com/images/wireframe/image.png" fluid/>
               teach <strong> Computer Science</strong> <br />
               as part of their curriculum
             </Container>
           </Grid.Column>
           <Grid.Column>
             <Container textAlign="center" padded>
-              <Image src="https://react.semantic-ui.com/images/wireframe/image.png" />
+              <Image src="https://react.semantic-ui.com/images/wireframe/image.png" fluid/>
               teach <strong> Computer Science</strong> <br />
               as part of their curriculum
             </Container>
           </Grid.Column>
           <Grid.Column>
             <Container textAlign="center" padded>
-              <Image src="https://react.semantic-ui.com/images/wireframe/image.png" />
+              <Image src="https://react.semantic-ui.com/images/wireframe/image.png" fluid/>
               teach <strong> Computer Science</strong> <br />
               as part of their curriculum
             </Container>
