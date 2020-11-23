@@ -13,6 +13,7 @@ import {
   GridRow,
   GridColumn,
   Input,
+  Link,
 } from "semantic-ui-react"
 
 const PlaceHolderName = { name: "TeamMemberName", title: "TeamMemberTitle" }
@@ -161,7 +162,113 @@ export default function SemanticTest() {
             <Image src='https://react.semantic-ui.com/images/wireframe/image.png' />
           </Grid.Column>
         </Grid>
+        
         {/*event cards*/}
+        <Grid>
+    <Grid.Row>
+
+      <Grid.Column width={8}>
+        <Segment padded>
+          <Grid columns={2}>
+            <Grid.Column>
+              <Image
+              src="https://react.semantic-ui.com/images/wireframe/image.png" 
+              />
+            </Grid.Column>
+            <Grid.Column>
+              <Header color="teal"><strong>Event Name
+              </strong><Header.Subheader>
+              mm/dd/yyyy</Header.Subheader>
+              </Header>
+              <p>Lorem ipsum dolor sit amet, consectetur 
+              adipiscing elit, sed do eiusmod tempor 
+              incididunt ut labore et dolore magna aliqua. 
+              Ut enim ad minim veniam, quis ...</p>
+              <Header as="h5" textAlign="right" color="yellow">
+              Read More...</Header>
+            </Grid.Column>
+          </Grid>
+        </Segment>
+      </Grid.Column>
+
+      <Grid.Column width={8}>
+        <Segment padded>
+          <Grid columns={2}>
+            <Grid.Column>
+              <Image
+              src="https://react.semantic-ui.com/images/wireframe/image.png" 
+              />
+            </Grid.Column>
+            <Grid.Column>
+              <Header color="teal"><strong>Event Name
+              </strong><Header.Subheader>
+              mm/dd/yyyy</Header.Subheader>
+              </Header>
+              <p>Lorem ipsum dolor sit amet, consectetur 
+              adipiscing elit, sed do eiusmod tempor 
+              incididunt ut labore et dolore magna aliqua. 
+              Ut enim ad minim veniam, quis ...</p>
+              <Header as="h5" textAlign="right" color="yellow">
+              Read More...</Header>
+            </Grid.Column>
+          </Grid>
+        </Segment>
+      </Grid.Column>
+
+    </Grid.Row>
+
+    <Grid.Row>
+
+      <Grid.Column width={8}>
+      <Segment padded>
+          <Grid columns={2}>
+            <Grid.Column>
+              <Image
+              src="https://react.semantic-ui.com/images/wireframe/image.png" 
+              />
+            </Grid.Column>
+            <Grid.Column>
+              <Header color="teal"><strong>Event Name
+              </strong><Header.Subheader>
+              mm/dd/yyyy</Header.Subheader>
+              </Header>
+              <p>Lorem ipsum dolor sit amet, consectetur 
+              adipiscing elit, sed do eiusmod tempor 
+              incididunt ut labore et dolore magna aliqua. 
+              Ut enim ad minim veniam, quis ...</p>
+              <Header as="h5" textAlign="right" color="yellow">
+              Read More...</Header>
+            </Grid.Column>
+          </Grid>
+        </Segment>
+      </Grid.Column>
+
+      <Grid.Column width={8}>
+      <Segment padded>
+          <Grid columns={2}>
+            <Grid.Column>
+              <Image
+              src="https://react.semantic-ui.com/images/wireframe/image.png" 
+              />
+            </Grid.Column>
+            <Grid.Column>
+              <Header color="teal"><strong>Event Name
+              </strong><Header.Subheader>
+              mm/dd/yyyy</Header.Subheader>
+              </Header>
+              <p>Lorem ipsum dolor sit amet, consectetur 
+              adipiscing elit, sed do eiusmod tempor 
+              incididunt ut labore et dolore magna aliqua. 
+              Ut enim ad minim veniam, quis ...</p>
+              <Header as="h5" textAlign="right" color="yellow">
+              Read More...</Header>
+            </Grid.Column>
+          </Grid>
+        </Segment>
+      </Grid.Column>
+    </Grid.Row>
+
+  </Grid>
       </Container>
     </>
   )
