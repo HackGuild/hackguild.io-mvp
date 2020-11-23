@@ -152,14 +152,16 @@ export default function SemanticTest() {
             </Container>
           </Grid.Column>
         </Grid>
-        {/*Events Page*/}
+        {/*Events Page Top*/}
         <Header size='huge' textAlign='center' color="violet">Events</Header>
+        <Header style={{ fontSize: "1.33em" }} textAlign='center'>Check out all the events HackGuild has
+        hosted or helped organized</Header>
         <Grid centered columns={2}>
           <Grid.Column>
             <Image src='https://react.semantic-ui.com/images/wireframe/image.png' />
           </Grid.Column>
         </Grid>
-
+        {/*event cards*/}
       </Container>
     </>
   )
