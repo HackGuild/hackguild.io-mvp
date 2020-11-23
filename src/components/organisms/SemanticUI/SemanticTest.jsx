@@ -128,7 +128,7 @@ export default function SemanticTest() {
             ))}
           </Grid>
         </Container>
-
+        {/*Home Page Image Placeholders*/}
         <Grid container columns={3} stackable>
           <Grid.Column>
             <Container textAlign="center" padded>
@@ -152,6 +152,14 @@ export default function SemanticTest() {
             </Container>
           </Grid.Column>
         </Grid>
+        {/*Events Page*/}
+        <Header size='huge' textAlign='center' color="violet">Events</Header>
+        <Grid centered columns={2}>
+          <Grid.Column>
+            <Image src='https://react.semantic-ui.com/images/wireframe/image.png' />
+          </Grid.Column>
+        </Grid>
+
       </Container>
     </>
   )
