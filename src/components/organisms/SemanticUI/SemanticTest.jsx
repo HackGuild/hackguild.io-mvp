@@ -165,7 +165,7 @@ export default function SemanticTest() {
 
         {/*event cards*/}
         <Header size="large" color="violet">Upcoming Events</Header>
-        <Grid>
+        <Grid stackable>
     <Grid.Row>
 
       <Grid.Column width={8}>
