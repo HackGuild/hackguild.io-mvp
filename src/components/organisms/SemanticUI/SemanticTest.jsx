@@ -114,7 +114,7 @@ export default function SemanticTest() {
             {/* First row of members */}
             {PlaceHolderNames.map(({ name, title }) => (
               <Grid.Column>
-                <Card raised>
+                <Card raised style={{boxShadow:"0px 0px 25px 10px rgba(0,0,0,0.15)"}}>
                   <Image
                     src="https://via.placeholder.com/150"
                     wrapped
