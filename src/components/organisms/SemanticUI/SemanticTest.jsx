@@ -133,28 +133,28 @@ export default function SemanticTest() {
         <Grid container columns={3} stackable>
           <Grid.Column>
             <Container textAlign="center" padded>
-              <Image src="https://react.semantic-ui.com/images/wireframe/image.png" />
+              <Image src="https://react.semantic-ui.com/images/wireframe/image.png" fluid/>
               teach <strong> Computer Science</strong> <br />
               as part of their curriculum
             </Container>
           </Grid.Column>
           <Grid.Column>
             <Container textAlign="center" padded>
-              <Image src="https://react.semantic-ui.com/images/wireframe/image.png" />
+              <Image src="https://react.semantic-ui.com/images/wireframe/image.png" fluid/>
               teach <strong> Computer Science</strong> <br />
               as part of their curriculum
             </Container>
           </Grid.Column>
           <Grid.Column>
             <Container textAlign="center" padded>
-              <Image src="https://react.semantic-ui.com/images/wireframe/image.png" />
+              <Image src="https://react.semantic-ui.com/images/wireframe/image.png" fluid/>
               teach <strong> Computer Science</strong> <br />
               as part of their curriculum
             </Container>
           </Grid.Column>
         </Grid>
         {/*Events Page Top*/}
-        <Header size='huge' textAlign='center' color="violet">Events</Header>
+        <Header size='huge' textAlign='center' color="teal">Events</Header>
         <Header style={{ fontSize: "1.33em" }} textAlign='center'>Check out all the events HackGuild has
         hosted or helped organized</Header>
         <Grid centered columns={2}>
@@ -162,8 +162,9 @@ export default function SemanticTest() {
             <Image src='https://react.semantic-ui.com/images/wireframe/image.png' />
           </Grid.Column>
         </Grid>
-        
+
         {/*event cards*/}
+        <Header size="large" color="violet">Upcoming Events</Header>
         <Grid>
     <Grid.Row>
 
