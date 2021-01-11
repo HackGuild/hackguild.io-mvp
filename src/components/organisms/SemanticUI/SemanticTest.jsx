@@ -27,8 +27,8 @@ const PlaceHolderEvents = new Array(4).fill(PlaceHolderEvent)
 export default function SemanticTest() {
   return (
     <>
-      <Segment vertical padded inverted>
-        <Container fluid>
+      <Segment vertical padded inverted centered>
+        <Container fluid centered>
           <Grid stackable verticalAlign="middle" columns="2">
             <Grid.Row>
               <Grid.Column floated="right" mobile={16} tablet={6} computer={6}>
@@ -78,14 +78,9 @@ export default function SemanticTest() {
           </Grid>
         </Container>
       </Segment>
-      <Container >
+      <Container>
         {/* Fluid segment with button on the right*/}
-        <Grid
-          centered
-          stackable
-          verticalAlign="middle"
-          columns="2"
-        >
+        <Grid centered stackable verticalAlign="middle" columns="2">
           <Segment raised padded>
             <Grid padded stackable>
               <Grid.Row centered stackable>
@@ -109,21 +104,22 @@ export default function SemanticTest() {
           </Segment>
         </Grid>
 
-        {/* Design: page 2 Learn more about the members behind HackGuild */}
-        <Header as="h2" textAlign="center" color="violet">
-          Our Team
-          <Header.Subheader>
-            This page contains some helpful examples that can be useful for
-            advanced layouts.
-          </Header.Subheader>
-        </Header>
-        {/* Team Bio Cards */}
-        <Container>
-          <Grid columns={4} doubling centered stackable padded relaxed>
+        <Container centered>
+          <Divider />
+          {/* Design: page 2 Learn more about the members behind HackGuild */}
+          <Header as="h2" textAlign="center" color="violet">
+            Our Team
+            <Header.Subheader>
+              This page contains some helpful examples that can be useful for
+              advanced layouts.
+            </Header.Subheader>
+          </Header>
+          {/* Team Bio Cards */}
+          <Grid columns={4} doubling stackable padded relaxed>
             {/* First row of members */}
             {PlaceHolderNames.map(({ name, title }) => (
-              <Grid.Column mobile={16} tablet={8} computer={4}>
-                <Card raised>
+              <Grid.Column mobile={16} tablet={8} computer={4} >
+                <Card raised centered>
                   <Image
                     src="https://via.placeholder.com/150"
                     wrapped
@@ -193,7 +189,7 @@ export default function SemanticTest() {
         <Header size="large" color="violet">
           Upcoming Events
         </Header>
-        <Grid columns={2} doubling stackable padded relaxed>
+        <Grid columns={2} doubling stackable padded relaxed centered>
           {PlaceHolderEvents.map(({ ev_name, image, content, date }) => (
             <Grid.Column width={8}>
               <Segment raised>
