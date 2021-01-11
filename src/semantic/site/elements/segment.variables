@@ -112,7 +112,7 @@
 ;
 
 /* Inverted */
-@invertedBackground: @black;
+@invertedBackground: @violetBackground;
 
 /* Floated */
 @floatedDistance: 1em;

@@ -1,23 +1,27 @@
-import { string } from "prop-types"
 import React from "react"
 import "semantic-ui-less/semantic.less"
 import {
   Button,
-  Container,
   Card,
-  Header,
+  Container,
+  Divider,
   Grid,
+  Header,
   Image,
-  Icon,
+  List,
   Segment,
-  GridRow,
-  GridColumn,
-  Input,
-  Link,
 } from "semantic-ui-react"
 
 const PlaceHolderName = { name: "TeamMemberName", title: "TeamMemberTitle" }
+const PlaceHolderEvent = {
+  ev_name: "Event Name",
+  image: "https://react.semantic-ui.com/images/wireframe/image.png",
+  content:
+    "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis ...",
+  date: "mm/dd/yyyy",
+}
 const PlaceHolderNames = new Array(8).fill(PlaceHolderName)
+const PlaceHolderEvents = new Array(4).fill(PlaceHolderEvent)
 
 export default function SemanticTest() {
   return (
@@ -55,14 +59,16 @@ export default function SemanticTest() {
                 />
               </Grid.Column>
             </Grid.Row>
-            <Grid.Row>
-              <Grid.Column textAlign="left">
-                <Button primary size="huge">
-                  Check Them Out
-                </Button>
-                <Button primary>Primary</Button>
-                <Button secondary>Secondary</Button>
-              </Grid.Column>
+            <Grid.Row width={6} padded stackable wrapped>
+              <Button size="huge" primary raised>
+                Check Them Out
+              </Button>
+              <Button primary size="big">
+                Primary
+              </Button>
+              <Button secondary size="big">
+                Secondary
+              </Button>
             </Grid.Row>
           </Grid>
 
@@ -110,14 +116,11 @@ export default function SemanticTest() {
 
         {/* Team Bio Cards */}
         <Container>
-          <Grid columns={4} doubling centered stackable padded>
+          <Grid columns={4} doubling centered stackable padded relaxed>
             {/* First row of members */}
             {PlaceHolderNames.map(({ name, title }) => (
               <Grid.Column>
-                <Card
-                  raised
-                  style={{ boxShadow: "0px 0px 25px 10px rgba(0,0,0,.15)" }}
-                >
+                <Card raised>
                   <Image
                     src="https://via.placeholder.com/150"
                     wrapped
@@ -132,6 +135,7 @@ export default function SemanticTest() {
             ))}
           </Grid>
         </Container>
+
         {/*Home Page Image Placeholders*/}
         <Grid container columns={3} stackable>
           <Grid.Column>
@@ -182,24 +186,20 @@ export default function SemanticTest() {
         <Header size="large" color="violet">
           Upcoming Events
         </Header>
-        <Grid>
-          <Grid.Row>
+        <Grid columns={2} doubling stackable padded relaxed>
+          {PlaceHolderEvents.map(({ ev_name, image, content, date }) => (
             <Grid.Column width={8}>
-              <Segment padded>
-                <Grid columns={2}>
+              <Segment raised>
+                <Grid columns={2} padded>
                   <Grid.Column>
-                    <Image src="https://react.semantic-ui.com/images/wireframe/image.png" />
+                    <Image src={image} />
                   </Grid.Column>
                   <Grid.Column>
                     <Header color="teal">
-                      <strong>Event Name</strong>
-                      <Header.Subheader>mm/dd/yyyy</Header.Subheader>
+                      <strong>{ev_name}</strong>
+                      <Header.Subheader>{date}</Header.Subheader>
                     </Header>
-                    <p>
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                      sed do eiusmod tempor incididunt ut labore et dolore magna
-                      aliqua. Ut enim ad minim veniam, quis ...
-                    </p>
+                    <p>{content}</p>
                     <Header as="h5" textAlign="right" color="yellow">
                       Read More...
                     </Header>
@@ -207,83 +207,76 @@ export default function SemanticTest() {
                 </Grid>
               </Segment>
             </Grid.Column>
-
-            <Grid.Column width={8}>
-              <Segment padded>
-                <Grid columns={2}>
-                  <Grid.Column>
-                    <Image src="https://react.semantic-ui.com/images/wireframe/image.png" />
-                  </Grid.Column>
-                  <Grid.Column>
-                    <Header color="teal">
-                      <strong>Event Name</strong>
-                      <Header.Subheader>mm/dd/yyyy</Header.Subheader>
-                    </Header>
-                    <p>
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                      sed do eiusmod tempor incididunt ut labore et dolore magna
-                      aliqua. Ut enim ad minim veniam, quis ...
-                    </p>
-                    <Header as="h5" textAlign="right" color="yellow">
-                      Read More...
-                    </Header>
-                  </Grid.Column>
-                </Grid>
-              </Segment>
-            </Grid.Column>
-          </Grid.Row>
-
-          <Grid.Row>
-            <Grid.Column width={8}>
-              <Segment padded>
-                <Grid columns={2}>
-                  <Grid.Column>
-                    <Image src="https://react.semantic-ui.com/images/wireframe/image.png" />
-                  </Grid.Column>
-                  <Grid.Column>
-                    <Header color="teal">
-                      <strong>Event Name</strong>
-                      <Header.Subheader>mm/dd/yyyy</Header.Subheader>
-                    </Header>
-                    <p>
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                      sed do eiusmod tempor incididunt ut labore et dolore magna
-                      aliqua. Ut enim ad minim veniam, quis ...
-                    </p>
-                    <Header as="h5" textAlign="right" color="yellow">
-                      Read More...
-                    </Header>
-                  </Grid.Column>
-                </Grid>
-              </Segment>
-            </Grid.Column>
-
-            <Grid.Column width={8}>
-              <Segment padded>
-                <Grid columns={2}>
-                  <Grid.Column>
-                    <Image src="https://react.semantic-ui.com/images/wireframe/image.png" />
-                  </Grid.Column>
-                  <Grid.Column>
-                    <Header color="teal">
-                      <strong>Event Name</strong>
-                      <Header.Subheader>mm/dd/yyyy</Header.Subheader>
-                    </Header>
-                    <p>
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                      sed do eiusmod tempor incididunt ut labore et dolore magna
-                      aliqua. Ut enim ad minim veniam, quis ...
-                    </p>
-                    <Header as="h5" textAlign="right" color="yellow">
-                      Read More...
-                    </Header>
-                  </Grid.Column>
-                </Grid>
-              </Segment>
-            </Grid.Column>
-          </Grid.Row>
+          ))}
         </Grid>
       </Container>
+
+      <Segment
+        primary
+        inverted
+        vertical
+        style={{
+          margin: "5em 0em 0em",
+          padding: "5em 0em",
+          // backgroundColor: "purple",
+        }}
+      >
+        <Container textAlign="center">
+          <Grid divided inverted stackable>
+            <Grid.Column width={3}>
+              <Header inverted as="h4" content="Group 1" />
+              <List link inverted>
+                <List.Item as="a">Link One</List.Item>
+                <List.Item as="a">Link Two</List.Item>
+                <List.Item as="a">Link Three</List.Item>
+                <List.Item as="a">Link Four</List.Item>
+              </List>
+            </Grid.Column>
+            <Grid.Column width={3}>
+              <Header inverted as="h4" content="Group 2" />
+              <List link inverted>
+                <List.Item as="a">Link One</List.Item>
+                <List.Item as="a">Link Two</List.Item>
+                <List.Item as="a">Link Three</List.Item>
+                <List.Item as="a">Link Four</List.Item>
+              </List>
+            </Grid.Column>
+            <Grid.Column width={3}>
+              <Header inverted as="h4" content="Group 3" />
+              <List link inverted>
+                <List.Item as="a">Link One</List.Item>
+                <List.Item as="a">Link Two</List.Item>
+                <List.Item as="a">Link Three</List.Item>
+                <List.Item as="a">Link Four</List.Item>
+              </List>
+            </Grid.Column>
+            <Grid.Column width={7}>
+              <Header inverted as="h4" content="Footer Header" />
+              <p>
+                Extra space for a call to action inside the footer that could
+                help re-engage users.
+              </p>
+            </Grid.Column>
+          </Grid>
+
+          <Divider inverted section />
+          <Image centered size="mini" src="/logo.png" />
+          <List horizontal inverted divided link size="small">
+            <List.Item as="a" href="#">
+              Site Map
+            </List.Item>
+            <List.Item as="a" href="#">
+              Contact Us
+            </List.Item>
+            <List.Item as="a" href="#">
+              Terms and Conditions
+            </List.Item>
+            <List.Item as="a" href="#">
+              Privacy Policy
+            </List.Item>
+          </List>
+        </Container>
+      </Segment>
     </>
   )
 }
