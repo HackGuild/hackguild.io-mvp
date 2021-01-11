@@ -11,6 +11,7 @@ import {
   Image,
   List,
   Segment,
+  Icon,
 } from "semantic-ui-react"
 
 const PlaceHolderName = { name: "TeamMemberName", title: "TeamMemberTitle" }
@@ -33,9 +34,7 @@ export default function SemanticTest() {
             <Grid.Row>
               <Grid.Column floated="right" mobile={16} tablet={6} computer={6}>
                 <Container>
-                  <Header as="h2" inverted>
-                    Our Mission
-                  </Header>
+                  <Header as="h2" inverted content="Our mission" />
                   <p>
                     We can give your company superpowers to do things that they
                     never thought possible. Let us delight your customers and
@@ -52,9 +51,11 @@ export default function SemanticTest() {
                 <Container textAlign="center">
                   <Grid columns="2" stackable padded>
                     <Grid.Column>
-                      <Button size="huge" primary>
-                        Check Us Out
-                      </Button>
+                      <Button
+                        size="huge"
+                        primary
+                        content="Check Us Out"
+                      ></Button>
                     </Grid.Column>
                     <Grid.Column>
                       <Button size="big" secondary>
@@ -118,7 +119,7 @@ export default function SemanticTest() {
           <Grid columns={4} doubling stackable padded relaxed>
             {/* First row of members */}
             {PlaceHolderNames.map(({ name, title }) => (
-              <Grid.Column mobile={16} tablet={8} computer={4} >
+              <Grid.Column mobile={16} tablet={8} computer={4}>
                 <Card raised centered>
                   <Image
                     src="https://via.placeholder.com/150"
@@ -203,9 +204,12 @@ export default function SemanticTest() {
                       <Header.Subheader>{date}</Header.Subheader>
                     </Header>
                     <p>{content}</p>
-                    <Header as="h5" textAlign="right" color="yellow">
-                      Read More...
-                    </Header>
+                    <Header
+                      as="h5"
+                      textAlign="right"
+                      color="yellow"
+                      content="Read More..."
+                    />
                   </Grid.Column>
                 </Grid>
               </Segment>
@@ -223,10 +227,19 @@ export default function SemanticTest() {
           margin: "5em 0em 0em",
         }}
       >
-        <Container fluid padded textAlign="center">
-          <Grid divided inverted stackable>
-            <Grid.Column width={3}>
-              <Header inverted as="h4" content="Group 1" />
+        <Container fluid padded textAlign="left">
+          <Grid inverted stackable padded fontSize={10}>
+            <Grid.Column width={5} padded>
+              {/* TODO: remove hard-link */}
+              <Image
+                centered
+                rounded
+                src="/static/Wordmark-cf74c7bcf886710257dc743b5f891999.png"
+                size="small"
+              />
+            </Grid.Column>
+            <Grid.Column width={2}>
+              <Header inverted as="h4" content="Home" />
               <List link inverted>
                 <List.Item as="a">Link One</List.Item>
                 <List.Item as="a">Link Two</List.Item>
@@ -234,49 +247,52 @@ export default function SemanticTest() {
                 <List.Item as="a">Link Four</List.Item>
               </List>
             </Grid.Column>
-            <Grid.Column width={3}>
-              <Header inverted as="h4" content="Group 2" />
+            <Grid.Column width={2}>
+              <Header inverted as="h4" content="About" />
               <List link inverted>
                 <List.Item as="a">Link One</List.Item>
-                <List.Item as="a">Link Two</List.Item>
-                <List.Item as="a">Link Three</List.Item>
                 <List.Item as="a">Link Four</List.Item>
               </List>
             </Grid.Column>
-            <Grid.Column width={3}>
-              <Header inverted as="h4" content="Group 3" />
+            <Grid.Column width={2}>
+              <Header inverted as="h4" content="Blog" />
               <List link inverted>
                 <List.Item as="a">Link One</List.Item>
                 <List.Item as="a">Link Two</List.Item>
-                <List.Item as="a">Link Three</List.Item>
-                <List.Item as="a">Link Four</List.Item>
               </List>
             </Grid.Column>
-            <Grid.Column width={7}>
-              <Header inverted as="h4" content="Footer Header" />
-              <p>
-                Extra space for a call to action inside the footer that could
-                help re-engage users.
-              </p>
+            <Grid.Column width={2}>
+              <Header inverted as="h4" content="Get Invovled" />
+              <List link inverted>
+                <List.Item as="a">Link One</List.Item>
+                <List.Item as="a">Link Two</List.Item>
+              </List>
+            </Grid.Column>
+            <Grid.Column width={3}>
+              <Header inverted as="h4" content="Follow us" />
+              <List link inverted>
+                <List.Item as="a">
+                  <Icon name="facebook" size="big" /> Facebook
+                </List.Item>
+                <List.Item as="a">
+                  <Icon name="twitter" size="big" /> Twitter
+                </List.Item>
+                <List.Item as="a">
+                  <Icon name="medium" size="big" /> Medium
+                </List.Item>
+                <List.Item as="a">
+                  <Icon name="instagram" size="big" /> Instagram
+                </List.Item>
+              </List>
             </Grid.Column>
           </Grid>
 
           <Divider inverted section />
-          <Image centered size="mini" src="/logo.png" />
-          <List horizontal inverted divided link size="small">
-            <List.Item as="a" href="#">
-              Site Map
-            </List.Item>
-            <List.Item as="a" href="#">
-              Contact Us
-            </List.Item>
-            <List.Item as="a" href="#">
-              Terms and Conditions
-            </List.Item>
-            <List.Item as="a" href="#">
-              Privacy Policy
-            </List.Item>
-          </List>
+          <Header
+            inverted
+            as="h4"
+            content="© 2020 HackGuild, built with love & Gatsby. Work in Progress. All rights reserved."
+          />
         </Container>
       </Segment>
     </>
