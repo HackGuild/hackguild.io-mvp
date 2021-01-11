@@ -6,6 +6,7 @@ import {
   Container,
   Divider,
   Grid,
+  GridColumn,
   Header,
   Image,
   List,
@@ -26,100 +27,102 @@ const PlaceHolderEvents = new Array(4).fill(PlaceHolderEvent)
 export default function SemanticTest() {
   return (
     <>
-      <Container fluid style={{ padding: "8em" }}>
-        <Segment vertical>
+      <Segment vertical padded inverted>
+        <Container fluid>
           <Grid stackable verticalAlign="middle" columns="2">
             <Grid.Row>
-              <Grid.Column width={8}>
-                <Header as="h2" color="violet">
-                  Our Mission
-                </Header>
-                <Header as="h3" style={{ fontSize: "2em" }}>
-                  We Help Companies and Companions
-                </Header>
-                <p>
-                  We can give your company superpowers to do things that they
-                  never thought possible. Let us delight your customers and
-                  empower your needs... through pure data analytics.
-                </p>
-                <Header as="h3" style={{ fontSize: "2em" }}>
-                  We Make Bananas That Can Dance
-                </Header>
-                <p style={{ fontSize: "1.33em" }}>
-                  Yes that's right, you thought it was the stuff of dreams, but
-                  even bananas can be bioengineered.
-                </p>
+              <Grid.Column floated="right" mobile={16} tablet={6} computer={6}>
+                <Container>
+                  <Header as="h2" inverted>
+                    Our Mission
+                  </Header>
+                  <p>
+                    We can give your company superpowers to do things that they
+                    never thought possible. Let us delight your customers and
+                    empower your needs... through pure data analytics.
+                  </p>
+                  <Header as="h3" size="huge" inverted>
+                    We Make Bananas That Can Dance
+                  </Header>
+                  <p style={{ fontSize: "1.33em" }}>
+                    Yes that's right, you thought it was the stuff of dreams,
+                    but even bananas can be bioengineered.
+                  </p>
+                </Container>
+                <Container textAlign="center">
+                  <Grid columns="2" stackable padded>
+                    <Grid.Column>
+                      <Button size="huge" primary>
+                        Check Us Out
+                      </Button>
+                    </Grid.Column>
+                    <Grid.Column>
+                      <Button size="big" secondary>
+                        Really, do it!
+                      </Button>
+                    </Grid.Column>
+                  </Grid>
+                </Container>
               </Grid.Column>
-              <Grid.Column floated="right" width={6}>
+
+              <Grid.Column floated="right" mobile={16} tablet={6} computer={6}>
+                {/* TODO: don't hard-link this image in prod */}
                 <Image
                   bordered
                   rounded
                   size="huge"
-                  src="https://via.placeholder.com/150"
+                  src="/static/082-cfbe130df5965aa54525b04e1027c627.png"
                 />
               </Grid.Column>
             </Grid.Row>
-            <Grid.Row width={6} padded stackable wrapped>
-              <Button size="huge" primary raised>
-                Check Them Out
-              </Button>
-              <Button primary size="big">
-                Primary
-              </Button>
-              <Button secondary size="big">
-                Secondary
-              </Button>
-            </Grid.Row>
           </Grid>
+        </Container>
+      </Segment>
+      <Container >
+        {/* Fluid segment with button on the right*/}
+        <Grid
+          centered
+          stackable
+          verticalAlign="middle"
+          columns="2"
+        >
+          <Segment raised padded>
+            <Grid padded stackable>
+              <Grid.Row centered stackable>
+                <Grid.Column mobile={16} computer={10} centered>
+                  <Header as="h2" color="violet">
+                    Interested in contributing?
+                  </Header>
+                  <Header.Subheader>
+                    We can give your company superpowers to do things that they
+                    never thought possible. Let us delight your customers and
+                    empower your needs... through pure data analytics.
+                  </Header.Subheader>
+                </Grid.Column>
+                <Grid.Column width={4}>
+                  <Button primary size="huge">
+                    Check Them Out
+                  </Button>
+                </Grid.Column>
+              </Grid.Row>
+            </Grid>
+          </Segment>
+        </Grid>
 
-          {/* Fluid segment with button on the right*/}
-          <Grid
-            centered
-            stackable
-            verticalAlign="middle"
-            columns="2"
-            container
-            style={{ padding: "1em 0em" }}
-          >
-            <Segment raised padded>
-              <Grid padded stackable>
-                <Grid.Row centered stackable>
-                  <Grid.Column width={12}>
-                    <Header as="h2" color="violet">
-                      Interested in contributing?
-                    </Header>
-                    <Header.Subheader>
-                      We can give your company superpowers to do things that
-                      they never thought possible. Let us delight your customers
-                      and empower your needs... through pure data analytics.
-                    </Header.Subheader>
-                  </Grid.Column>
-                  <Grid.Column width={4}>
-                    <Button primary size="huge">
-                      Check Them Out
-                    </Button>
-                  </Grid.Column>
-                </Grid.Row>
-              </Grid>
-            </Segment>
-          </Grid>
-
-          {/* Design: page 2 Learn more about the members behind HackGuild */}
-          <Header as="h2" textAlign="center" color="violet">
-            Our Team
-            <Header.Subheader>
-              This page contains some helpful examples that can be useful for
-              advanced layouts.
-            </Header.Subheader>
-          </Header>
-        </Segment>
-
+        {/* Design: page 2 Learn more about the members behind HackGuild */}
+        <Header as="h2" textAlign="center" color="violet">
+          Our Team
+          <Header.Subheader>
+            This page contains some helpful examples that can be useful for
+            advanced layouts.
+          </Header.Subheader>
+        </Header>
         {/* Team Bio Cards */}
         <Container>
           <Grid columns={4} doubling centered stackable padded relaxed>
             {/* First row of members */}
             {PlaceHolderNames.map(({ name, title }) => (
-              <Grid.Column>
+              <Grid.Column mobile={16} tablet={8} computer={4}>
                 <Card raised>
                   <Image
                     src="https://via.placeholder.com/150"
@@ -127,7 +130,11 @@ export default function SemanticTest() {
                     ui={false}
                   />
                   <Card.Content>
-                    <Card.Header>{name}</Card.Header>
+                    <Card.Header>
+                      <Header as="h5" color="violet">
+                        {name}
+                      </Header>
+                    </Card.Header>
                     <Card.Meta>{title}</Card.Meta>
                   </Card.Content>
                 </Card>
@@ -136,7 +143,7 @@ export default function SemanticTest() {
           </Grid>
         </Container>
 
-        {/*Home Page Image Placeholders*/}
+        {/*Home Page Statistics Image Placeholders*/}
         <Grid container columns={3} stackable>
           <Grid.Column>
             <Container textAlign="center" padded>
@@ -154,7 +161,7 @@ export default function SemanticTest() {
                 src="https://react.semantic-ui.com/images/wireframe/image.png"
                 fluid
               />
-              teach <strong> Computer Science</strong> <br />
+              teach <strong>Computer Science</strong> <br />
               as part of their curriculum
             </Container>
           </Grid.Column>
@@ -215,13 +222,12 @@ export default function SemanticTest() {
         primary
         inverted
         vertical
+        padded
         style={{
           margin: "5em 0em 0em",
-          padding: "5em 0em",
-          // backgroundColor: "purple",
         }}
       >
-        <Container textAlign="center">
+        <Container fluid padded textAlign="center">
           <Grid divided inverted stackable>
             <Grid.Column width={3}>
               <Header inverted as="h4" content="Group 1" />
