@@ -39,10 +39,20 @@ export default function SemanticTest() {
     widths={10}
     style={{ padding: "1em" }}>
         <Menu.Item>
-
+        <Image
+          src={Logo}
+          alt="HackGuild logo"
+          size="tiny"
+        />
         </Menu.Item>
-        <Menu.Item></Menu.Item>
-
+        <Container widths={10} style={{ fontSize:"16px"}}>
+        <Menu.Item name="home" position="right">
+          <a href="/">Home</a>
+        </Menu.Item>
+        <Menu.Item name="about">
+          <a href="/about">About</a>
+        </Menu.Item>
+        </Container>
       </Menu>
 
 
