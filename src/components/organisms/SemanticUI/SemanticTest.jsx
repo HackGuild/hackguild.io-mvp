@@ -46,12 +46,20 @@ export default function SemanticTest() {
         />
         </Menu.Item>
         <Container widths={10} style={{ fontSize:"16px"}}>
-        <Menu.Item name="home" position="right">
-          <a href="/">Home</a>
-        </Menu.Item>
-        <Menu.Item name="about">
-          <a href="/about">About</a>
-        </Menu.Item>
+          <Menu.Item name="home" position="right">
+            <a href="/">Home</a>
+          </Menu.Item>
+          <Menu.Item name="about">
+            <a href="/about">About</a>
+          </Menu.Item>
+          <Menu.Item name="blog">
+            <a href="https://medium.com/hackguild">Blog</a>
+          </Menu.Item>
+          <Menu.Item name="events">
+            <a href="/events">Events</a>
+          </Menu.Item>
+
+
         </Container>
       </Menu>
 
