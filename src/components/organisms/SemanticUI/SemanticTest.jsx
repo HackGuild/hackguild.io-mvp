@@ -31,12 +31,11 @@ const PlaceHolderEvents = new Array(4).fill(PlaceHolderEvent)
 export default function SemanticTest() {
   return (
     <>
-
+<div>
     <Menu fixed='top' color='violet'
     inverted 
     secondary 
     stackable
-    widths={10}
     style={{ padding: "1em" }}>
         <Menu.Item>
         <Image
@@ -58,11 +57,15 @@ export default function SemanticTest() {
           <Menu.Item name="events">
             <a href="/events">Events</a>
           </Menu.Item>
+          <Menu.Item name="get_involved">
+            <a href="https://discord.com/invite/fpmQFvh">Get Involved</a>
+          </Menu.Item>
+
 
 
         </Container>
       </Menu>
-
+    </div>
 
 
       <Segment vertical padded inverted centered>
