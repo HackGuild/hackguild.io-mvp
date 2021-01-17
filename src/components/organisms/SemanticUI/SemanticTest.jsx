@@ -11,7 +11,10 @@ import {
   Image,
   List,
   Segment,
+  Menu,
 } from "semantic-ui-react"
+
+import Logo from "./../../../images/Wordmark.png"
 
 const PlaceHolderName = { name: "TeamMemberName", title: "TeamMemberTitle" }
 const PlaceHolderEvent = {
@@ -24,9 +27,26 @@ const PlaceHolderEvent = {
 const PlaceHolderNames = new Array(8).fill(PlaceHolderName)
 const PlaceHolderEvents = new Array(4).fill(PlaceHolderEvent)
 
+
 export default function SemanticTest() {
   return (
     <>
+
+    <Menu fixed='top' color='violet'
+    inverted 
+    secondary 
+    stackable
+    widths={10}
+    style={{ padding: "1em" }}>
+        <Menu.Item>
+
+        </Menu.Item>
+        <Menu.Item></Menu.Item>
+
+      </Menu>
+
+
+
       <Segment vertical padded inverted centered>
         <Container fluid centered>
           <Grid stackable verticalAlign="middle" columns="2">
