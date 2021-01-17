@@ -44,7 +44,7 @@ export default function SemanticTest() {
           size="tiny"
         />
         </Menu.Item>
-        <Container widths={10} style={{ fontSize:"16px"}}>
+        <Container widths={10} style={{ fontSize:"18px"}}>
           <Menu.Item name="home" position="right">
             <a href="/">Home</a>
           </Menu.Item>
