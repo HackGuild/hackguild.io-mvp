@@ -6,13 +6,16 @@ import {
   Container,
   Divider,
   Grid,
-  GridColumn,
   Header,
   Image,
   List,
   Segment,
   Icon,
+  Menu,
 } from "semantic-ui-react"
+
+import Logo from "./../../../images/Wordmark.png"
+import { Link } from "gatsby" // links to other pages in the site should use this componentIs
 
 const PlaceHolderName = { name: "TeamMemberName", title: "TeamMemberTitle" }
 const PlaceHolderEvent = {
@@ -28,9 +31,41 @@ const PlaceHolderEvents = new Array(4).fill(PlaceHolderEvent)
 export default function SemanticTest() {
   return (
     <>
+      <div>
+        <Menu
+          fixed="top"
+          color="violet"
+          inverted
+          secondary
+          stackable
+          style={{ padding: "1em" }}
+        >
+          <Menu.Item>
+            <Image src={Logo} alt="HackGuild logo" size="tiny" />
+          </Menu.Item>
+          <Container widths={10} style={{ fontSize: "18px" }}>
+            <Menu.Item name="home" position="right">
+              <Link to="/">Home</Link>
+            </Menu.Item>
+            <Menu.Item name="about">
+              <Link to="/about">About</Link>
+            </Menu.Item>
+            <Menu.Item name="blog">
+              <a href="https://medium.com/hackguild">Blog</a>
+            </Menu.Item>
+            <Menu.Item name="events">
+              <Link to="/events">Events</Link>
+            </Menu.Item>
+            <Menu.Item name="get_involved">
+              <a href="https://discord.com/invite/fpmQFvh">Get Involved</a>
+            </Menu.Item>
+          </Container>
+        </Menu>
+      </div>
+
       <Segment vertical padded inverted centered>
         <Container fluid centered>
-          <Grid stackable verticalAlign="middle" columns="2">
+          <Grid stackable verticalAlign="middle" columns={2}>
             <Grid.Row>
               <Grid.Column floated="right" mobile={16} tablet={6} computer={6}>
                 <Container>
@@ -141,37 +176,19 @@ export default function SemanticTest() {
         </Container>
 
         {/*Home Page Statistics Image Placeholders*/}
-        <Grid container columns={3} stackable>
-          <Grid.Column>
-            <Container textAlign="center" padded>
-              <Image
-                src="https://react.semantic-ui.com/images/wireframe/image.png"
-                fluid
-              />
-              teach <strong> Computer Science</strong> <br />
-              as part of their curriculum
-            </Container>
-          </Grid.Column>
-          <Grid.Column>
-            <Container textAlign="center" padded>
-              <Image
-                src="https://react.semantic-ui.com/images/wireframe/image.png"
-                fluid
-              />
-              teach <strong>Computer Science</strong> <br />
-              as part of their curriculum
-            </Container>
-          </Grid.Column>
-          <Grid.Column>
-            <Container textAlign="center" padded>
-              <Image
-                src="https://react.semantic-ui.com/images/wireframe/image.png"
-                fluid
-              />
-              teach <strong> Computer Science</strong> <br />
-              as part of their curriculum
-            </Container>
-          </Grid.Column>
+        <Grid container columns={3} stackable centered fluid>
+          {[...new Array(3).fill()].map(() => (
+            <Grid.Column mobile={8} tablet={8} computer={5}>
+              <Container textAlign="center" padded>
+                <Image
+                  src="https://react.semantic-ui.com/images/wireframe/image.png"
+                  fluid
+                />
+                teach <strong> Computer Science</strong> <br />
+                as part of their curriculum
+              </Container>
+            </Grid.Column>
+          ))}
         </Grid>
         {/*Events Page Top*/}
         <Header size="huge" textAlign="center" color="teal">
@@ -270,19 +287,22 @@ export default function SemanticTest() {
             </Grid.Column>
             <Grid.Column width={3}>
               <Header inverted as="h4" content="Follow us" />
-              <List link inverted>
-                <List.Item as="a">
-                  <Icon name="facebook" size="big" /> Facebook
-                </List.Item>
-                <List.Item as="a">
-                  <Icon name="twitter" size="big" /> Twitter
-                </List.Item>
-                <List.Item as="a">
-                  <Icon name="medium" size="big" /> Medium
-                </List.Item>
-                <List.Item as="a">
-                  <Icon name="instagram" size="big" /> Instagram
-                </List.Item>
+              <List link inverted textAlign="left">
+                {["Facebook", "Twitter", "Medium", "Instagram"].map(
+                  iconName => (
+                    <div style={{ padding: 0, margin: 0 }}>
+                      <List.Item as="a" floated="left">
+                        <Icon
+                          name={iconName.toLowerCase()}
+                          size="big"
+                          inverted
+                          content={iconName}
+                        />{" "}
+                        {iconName}
+                      </List.Item>
+                    </div>
+                  )
+                )}
               </List>
             </Grid.Column>
           </Grid>
@@ -291,7 +311,7 @@ export default function SemanticTest() {
           <Header
             inverted
             as="h4"
-            content="© 2020 HackGuild, built with love & Gatsby. Work in Progress. All rights reserved."
+            content="&copy; 2020 HackGuild, built with love &amp; Gatsby. Work in Progress. All rights reserved."
           />
         </Container>
       </Segment>
