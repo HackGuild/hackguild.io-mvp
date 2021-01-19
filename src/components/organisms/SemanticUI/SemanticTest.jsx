@@ -28,6 +28,7 @@ const PlaceHolderEvent = {
 const PlaceHolderNames = new Array(8).fill(PlaceHolderName)
 const PlaceHolderEvents = new Array(4).fill(PlaceHolderEvent)
 
+
 export default function SemanticTest() {
   return (
     <>
