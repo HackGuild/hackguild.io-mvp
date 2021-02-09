@@ -32,6 +32,7 @@ const PlaceHolderEvents = new Array(4).fill(PlaceHolderEvent)
 export default function SemanticTest() {
   return (
     <>
+    {/*Nav Bar*/}
       <div>
         <Menu
           fixed="top"
