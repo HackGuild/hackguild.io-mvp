@@ -171,8 +171,10 @@ class Footer extends React.Component {
                       site: "https://www.facebook.com/HackGuild/",
                     },
                     { icon: "Twitter", site: "" },
-                    { icon: "Medium", site: "" },
-                    { icon: "Instagram", site: "" },
+                    { icon: "Medium", 
+                    site: "https://medium.com/hackguild" },
+                    { icon: "Instagram", 
+                    site: "https://www.instagram.com/hackguild/" },
                     {
                       icon: "LinkedIn",
                       site: "https://www.linkedin.com/company/hackguild/",
